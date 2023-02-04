@@ -33,7 +33,7 @@ public class MouseSelect : MonoBehaviour
 
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 50, mask))
+            if (Physics.Raycast(ray, out hit, 500, mask))
             {
                 Debug.Log("Selected grid");
                 GridSpace space = hit.collider.GetComponent<GridSpace>();
