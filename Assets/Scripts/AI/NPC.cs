@@ -24,7 +24,6 @@ public class NPC : MonoBehaviour
     /// <param name="position">The position to move the AI to.</param>
     public virtual void SetDestination(Vector3 position)
     {
-        Debug.Log($"moving to {position}");
         agent.SetDestination(position);
     }
 
