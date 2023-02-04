@@ -73,6 +73,7 @@ public class GridSpace : MonoBehaviour
 
     public void UpdateMaterial()
     {
+        if (meshRenderer == null) meshRenderer = GetComponentInChildren<MeshRenderer>();
         switch (currentSurface)
         {
             case E_Surfaces.Open:

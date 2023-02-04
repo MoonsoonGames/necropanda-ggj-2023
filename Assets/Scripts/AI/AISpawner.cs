@@ -42,6 +42,7 @@ public class AISpawner : MonoBehaviour
 }
 
 // Wave class, holds info about the wave
+[System.Serializable]
 public class Wave
 {
     public int enemyCount;

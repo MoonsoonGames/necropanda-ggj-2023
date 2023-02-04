@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5713996564254599292}
   - component: {fileID: 5713996564254599293}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,9 +97,10 @@ GameObject:
   - component: {fileID: 5713996564709775321}
   - component: {fileID: 5713996564709775323}
   - component: {fileID: 6674255513578300028}
-  m_Layer: 0
+  - component: {fileID: 2164893918636717278}
+  m_Layer: 7
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +158,9 @@ MonoBehaviour:
   agent: {fileID: 0}
   currentState: 0
   target: {fileID: 0}
-  damageAmount: 10
+  damageAmount: 4
+  attackTime: 5
+  range: 5
 --- !u!114 &6674255513578300028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,4 +173,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 995d306d44c7a534887017bcb1e75454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 10
+--- !u!136 &2164893918636717278
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5713996564709775303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

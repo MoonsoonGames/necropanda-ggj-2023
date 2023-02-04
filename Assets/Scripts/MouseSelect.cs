@@ -28,28 +28,23 @@ public class MouseSelect : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Invoke("SelectSpace", 0.2f);
-        }
-    }
+            Debug.Log("Mouse down");
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-    void SelectSpace()
-    {
-        Debug.Log("Mouse down");
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
 
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, 500, mask))
-        {
-            Debug.Log("Selected grid");
-            GridSpace space = hit.collider.GetComponent<GridSpace>();
-
-            if (space != null)
+            if (Physics.Raycast(ray, out hit, 500, mask))
             {
-                if (selectedSpace != null)
-                    selectedSpace.Selected(false, buildMenu);
-                space.Selected(true, buildMenu);
-                selectedSpace = space;
+                Debug.Log("Selected grid");
+                GridSpace space = hit.collider.GetComponent<GridSpace>();
+
+                if (space != null)
+                {
+                    if (selectedSpace != null)
+                        selectedSpace.Selected(false, buildMenu);
+                    space.Selected(true, buildMenu);
+                    selectedSpace = space;
+                }
             }
         }
     }

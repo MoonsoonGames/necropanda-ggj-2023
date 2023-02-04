@@ -15,7 +15,7 @@ MonoBehaviour:
   plantName: Spores
   plantObj: {fileID: 4428920011090734225, guid: d765de643a6a3a84481a9718beb599b3,
     type: 3}
-  health: 20
+  health: 80
   sprite: {fileID: -348695466, guid: 69f4a4d7abf03b14498ed7233e71d5e7, type: 3}
   buildSurfaces: 01000000
   waterCost: 1
