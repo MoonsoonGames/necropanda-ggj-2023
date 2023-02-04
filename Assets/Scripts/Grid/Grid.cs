@@ -104,16 +104,16 @@ public class Grid : MonoBehaviour
             switch (randInt)
             {
                 case 0:
-                    item.surface = E_Surfaces.Open;
+                    item.SetupBaseSurface(E_Surfaces.Open);
                     break;
                 case 1:
-                    item.surface = E_Surfaces.Slowed;
+                    item.SetupBaseSurface(E_Surfaces.Marsh);
                     break;
                 case 2:
-                    item.surface = E_Surfaces.Water;
+                    item.SetupBaseSurface(E_Surfaces.Water);
                     break;
                 case 3:
-                    item.surface = E_Surfaces.Closed;
+                    item.SetupBaseSurface(E_Surfaces.Closed);
                     break;
             }
         }

@@ -23,5 +23,5 @@ public class Plant : ScriptableObject
 
 public enum E_Surfaces
 {
-    Open, Slowed, Water, Closed, Null
+    Open, Marsh, Water, Closed, Null
 }
