@@ -45,7 +45,7 @@ public class GridSpace : MonoBehaviour
 
     public void SetupSize(Vector3 cubeSize, Vector3 colliderSize)
     {
-        this.size = cubeSize;
+        this.size = colliderSize;
         meshRenderer = GetComponentInChildren<MeshRenderer>();
         meshRenderer.gameObject.transform.localScale = cubeSize;
         UpdateMaterial();
@@ -58,6 +58,8 @@ public class GridSpace : MonoBehaviour
         currentSurface = plant.surfaceModifier == E_Surfaces.Null ? baseSurface : plant.surfaceModifier;
         MouseSelect.instance.GetBuildMenu().SetOpen(currentSurface);
         UpdateMaterial();
+
+        plant.SpawnPlant(this);
     }
 
     public void DestroyPlant()
