@@ -118,4 +118,26 @@ public class Grid : MonoBehaviour
             }
         }
     }
+
+    [ContextMenu("Randomize Grid Surfaces - No Close")]
+    public void RandomizeGridSurfacesNoClose()
+    {
+        foreach (var item in spaces)
+        {
+            int randInt = Random.Range(0, 3);
+
+            switch (randInt)
+            {
+                case 0:
+                    item.SetupBaseSurface(E_Surfaces.Open);
+                    break;
+                case 1:
+                    item.SetupBaseSurface(E_Surfaces.Marsh);
+                    break;
+                case 2:
+                    item.SetupBaseSurface(E_Surfaces.Water);
+                    break;
+            }
+        }
+    }
 }
