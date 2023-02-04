@@ -20,7 +20,7 @@ MonoBehaviour:
   buildSurfaces: 00000000
   waterCost: 1
   surfaceModifier: 1
-  radius: 5
+  radius: 11
   damage: 0
   healing: 0
   confusion: 0

@@ -30,4 +30,15 @@ public class OverrideParent : MonoBehaviour
                 break;
         }
     }
+
+    [ContextMenu("Remove Closed")]
+    public void RemoveClosed()
+    {
+        GridSpace space = GetComponentInParent<GridSpace>();
+        
+        if (space.baseSurface == E_Surfaces.Closed)
+        {
+            space.SetupBaseSurface(E_Surfaces.Open);
+        }
+    }
 }
