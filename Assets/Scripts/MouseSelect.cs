@@ -7,7 +7,7 @@ public class MouseSelect : MonoBehaviour
     public static MouseSelect instance;
     public LayerMask mask;
 
-    GridSpace selectedSpace;
+    GridSpace selectedSpace; public GridSpace GetCurrentSpace() { return selectedSpace; }
 
     BuildMenu buildMenu; public BuildMenu GetBuildMenu() { return buildMenu; }
 

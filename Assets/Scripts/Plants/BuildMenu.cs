@@ -7,6 +7,7 @@ public class BuildMenu : MonoBehaviour
 {
     public GameObject growMenu;
     public GameObject plantMenu;
+    public PlantInfo plantInfo;
     public GameObject grid;
     public TextMeshProUGUI text;
 
@@ -37,8 +38,7 @@ public class BuildMenu : MonoBehaviour
         if (plant != null)
         {
             plantMenu.SetActive(true);
-            //GetPlants(surface);
-            //text.text = surface.ToString();
+            plantInfo.SetupMenu(plant);
         }
         else
         {

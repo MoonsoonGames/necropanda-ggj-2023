@@ -6251,6 +6251,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8706211968568166929}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1549999008 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3906317798021635782, guid: 5bce3ccc0e44e47488df28a3f22473d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8706211968568166929}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549999004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d9b3d2432935a49861c95d421aaf5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1556448821
 GameObject:
   m_ObjectHideFlags: 0
@@ -6735,6 +6747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growMenu: {fileID: 1763580135}
   plantMenu: {fileID: 1549999004}
+  plantInfo: {fileID: 1549999008}
   grid: {fileID: 290542056}
   text: {fileID: 900173224}
   allPlants:

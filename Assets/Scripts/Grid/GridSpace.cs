@@ -54,4 +54,11 @@ public class GridSpace : MonoBehaviour
         this.size = size;
         GetComponent<BoxCollider>().size = size;
     }
+
+    public void GrowPlant(Plant plant)
+    {
+        //cost
+        surface = plant.surfaceModifier;
+        MouseSelect.instance.GetBuildMenu().SetOpen(surface);
+    }
 }
