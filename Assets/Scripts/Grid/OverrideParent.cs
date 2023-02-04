@@ -11,6 +11,13 @@ public class OverrideParent : MonoBehaviour
         space.SetupBaseSurface(E_Surfaces.Water);
     }
 
+    [ContextMenu("Set Surface - Marsh")]
+    public void SetMarsh()
+    {
+        GridSpace space = GetComponentInParent<GridSpace>();
+        space.SetupBaseSurface(E_Surfaces.Marsh);
+    }
+
     [ContextMenu("Set Surface - Closed")]
     public void SetClosed()
     {
