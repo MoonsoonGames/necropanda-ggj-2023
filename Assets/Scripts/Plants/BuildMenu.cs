@@ -5,7 +5,8 @@ using TMPro;
 
 public class BuildMenu : MonoBehaviour
 {
-    public GameObject menu;
+    public GameObject growMenu;
+    public GameObject plantMenu;
     public GameObject grid;
     public TextMeshProUGUI text;
 
@@ -15,29 +16,33 @@ public class BuildMenu : MonoBehaviour
 
     public void SetOpen(E_Surfaces surface)
     {
+        plantMenu.SetActive(false);
+
         if (surface != E_Surfaces.Null)
         {
-            menu.SetActive(true);
+            growMenu.SetActive(true);
             GetPlants(surface);
             text.text = surface.ToString();
         }
         else
         {
-            menu.SetActive(false);
+            growMenu.SetActive(false);
         }
     }
 
     public void SetOpen(Plant plant)
     {
+        growMenu.SetActive(false);
+
         if (plant != null)
         {
-            menu.SetActive(true);
+            plantMenu.SetActive(true);
             //GetPlants(surface);
             //text.text = surface.ToString();
         }
         else
         {
-            menu.SetActive(false);
+            plantMenu.SetActive(false);
         }
     }
 

@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class MouseSelect : MonoBehaviour
 {
+    public static MouseSelect instance;
     public LayerMask mask;
 
     GridSpace selectedSpace;
 
-    BuildMenu buildMenu;
+    BuildMenu buildMenu; public BuildMenu GetBuildMenu() { return buildMenu; }
 
     private void Start()
     {
+        instance = this;
         SetupReferences();
     }
 
@@ -43,11 +45,6 @@ public class MouseSelect : MonoBehaviour
                     space.Selected(true, buildMenu);
                     selectedSpace = space;
                 }
-            }
-            else
-            {
-                if (selectedSpace != null)
-                    selectedSpace.Selected(false, buildMenu);
             }
         }
     }

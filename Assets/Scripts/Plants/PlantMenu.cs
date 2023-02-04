@@ -17,4 +17,9 @@ public class PlantMenu : MonoBehaviour
         text.text = plant.plantName;
         image.sprite = plant.sprite;
     }
+
+    public void ButtonPressed()
+    {
+        MouseSelect.instance.GetBuildMenu().SetOpen(plant);
+    }
 }
