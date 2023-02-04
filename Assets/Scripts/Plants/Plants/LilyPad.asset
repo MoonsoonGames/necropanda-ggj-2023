@@ -25,3 +25,6 @@ MonoBehaviour:
   healing: 0
   confusion: 0
   slow: 0
+  stun: 0
+  tickTime: 99999
+  maxTargets: 0

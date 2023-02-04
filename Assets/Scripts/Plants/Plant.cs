@@ -19,7 +19,10 @@ public class Plant : ScriptableObject
     public int healing;
     public bool confusion;
     public bool slow;
+    public bool stun;
     public float tickTime = 1f;
+    public int maxTargets = 1;
+    public LayerMask targetLayers;
 
     public void SpawnPlant(GridSpace space)
     {
