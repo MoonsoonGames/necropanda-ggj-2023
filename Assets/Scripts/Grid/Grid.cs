@@ -141,7 +141,7 @@ public class Grid : MonoBehaviour
         }
     }
 
-    [ContextMenu("Randomize Grid Surfaces - No Close/Water")]
+    [ContextMenu("Randomize Grid Surfaces - No Closed or Water")]
     public void RandomizeGridSurfacesNoCloseWater()
     {
         foreach (var item in spaces)

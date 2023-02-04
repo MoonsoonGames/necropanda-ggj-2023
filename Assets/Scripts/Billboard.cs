@@ -8,12 +8,6 @@ public class Billboard : MonoBehaviour
     public bool lockY = false;
     public bool lockZ = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        Invoke("Setup", 0.5f);
-    }
-
     // Update is called once per frame
     void Update()
     {
