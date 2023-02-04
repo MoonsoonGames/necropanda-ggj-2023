@@ -5,7 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SCN_Sample.unity
     guid: f2a1f8cadfae3ea4b86793d73cb5b102
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/main.unity
+    guid: 723261af2500a574faa055f42f18ffed
+  m_configObjects:
+    io.coherence.simulator.build.options: {fileID: 11400000, guid: f67f6f175163ca44ca05328fe3f02733,
+      type: 2}
