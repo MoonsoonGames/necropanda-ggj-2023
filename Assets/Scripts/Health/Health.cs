@@ -33,6 +33,15 @@ public class Health : MonoBehaviour, IDamageable
         }
     }
 
+    public void Heal(int healing)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + healing, 0, maxHealth);
+        if (CheckKill())
+        {
+            Kill();
+        }
+    }
+
     public bool CheckKill()
     {
         return currentHealth <= 0;
