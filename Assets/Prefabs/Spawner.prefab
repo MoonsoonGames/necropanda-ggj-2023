@@ -177,9 +177,9 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Spawner_4c242586da6a31949973a28c5fabc675
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncSpawner_id3, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncSpawner_id2, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2

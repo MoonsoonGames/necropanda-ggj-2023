@@ -10,22 +10,19 @@ namespace Coherence.Generated
 
 	public static class Archetypes
 	{
-		public const int First__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129Index = 0;
-		public const int Enemy_8e3461cf8d4e4834688cfb7eaef98857Index = 1;
-		public const int DefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6eIndex = 2;
-		public const int Player_d8263f41a789c7b4d99d257a64a29b99Index = 3;
-		public const int Spawner_4c242586da6a31949973a28c5fabc675Index = 4;
+		public const int DefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6eIndex = 0;
+		public const int Player_d8263f41a789c7b4d99d257a64a29b99Index = 1;
+		public const int Spawner_4c242586da6a31949973a28c5fabc675Index = 2;
+		public const int Enemy_8e3461cf8d4e4834688cfb7eaef98857Index = 3;
 
 		public static Dictionary<string, int> IndexForName = new Dictionary<string, int>() {
-			{ "First__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129", 0 },
+			{ "DefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e", 0 },
 
-			{ "Enemy_8e3461cf8d4e4834688cfb7eaef98857", 1 },
+			{ "Player_d8263f41a789c7b4d99d257a64a29b99", 1 },
 
-			{ "DefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e", 2 },
+			{ "Spawner_4c242586da6a31949973a28c5fabc675", 2 },
 
-			{ "Player_d8263f41a789c7b4d99d257a64a29b99", 3 },
-
-			{ "Spawner_4c242586da6a31949973a28c5fabc675", 4 },
+			{ "Enemy_8e3461cf8d4e4834688cfb7eaef98857", 3 },
 
 		};
 	}

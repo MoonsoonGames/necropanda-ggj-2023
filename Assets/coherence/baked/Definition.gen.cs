@@ -16,7 +16,7 @@ namespace Coherence.Generated
 
 	public class Definition : IDefinition
 	{
-		public const string schemaId = "f91a4525aca0ba5c2b61c74682958159946838e1";
+		public const string schemaId = "dca935afe24b1905e68feedd4aab387455a86090";
 		public const uint InternalWorldPosition = 0;
 		public const uint InternalWorldOrientation = 1;
 		public const uint InternalLocalUser = 2;
@@ -119,38 +119,32 @@ namespace Coherence.Generated
 		public const uint InternalGenericFieldULong3 = 99;
 		public const uint InternalGenericFieldColor0 = 100;
 		public const uint InternalGenericFieldColor1 = 101;
-		public const uint InternalFirst__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986 = 102;
-		public const uint InternalEnemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent = 103;
-		public const uint InternalEnemy_id1_Health = 104;
-		public const uint InternalDefencePoint_id2_Health_2952278128716974392 = 105;
-		public const uint InternalSpawner_id4_AISpawner_2011534467780421880 = 106;
-		public const uint InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldPosition_LOD0 = 107;
-		public const uint InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldOrientation_LOD0 = 108;
-		public const uint InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_GenericScale_LOD0 = 109;
-		public const uint InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_First__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986_LOD0 = 110;
-		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0 = 111;
-		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0 = 112;
-		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0 = 113;
-		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent_LOD0 = 114;
-		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id1_Health_LOD0 = 115;
-		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0 = 116;
-		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0 = 117;
-		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_GenericScale_LOD0 = 118;
-		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id2_Health_2952278128716974392_LOD0 = 119;
-		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldPosition_LOD0 = 120;
-		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldOrientation_LOD0 = 121;
-		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_GenericScale_LOD0 = 122;
-		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldPosition_LOD0 = 123;
-		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldOrientation_LOD0 = 124;
-		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_GenericScale_LOD0 = 125;
-		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id4_AISpawner_2011534467780421880_LOD0 = 126;
+		public const uint InternalDefencePoint_id0_Health_2952278128716974392 = 102;
+		public const uint InternalSpawner_id2_AISpawner_2011534467780421880 = 103;
+		public const uint InternalEnemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321 = 104;
+		public const uint InternalEnemy_id3_Health_6674255513578300028 = 105;
+		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0 = 106;
+		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0 = 107;
+		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_GenericScale_LOD0 = 108;
+		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id0_Health_2952278128716974392_LOD0 = 109;
+		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldPosition_LOD0 = 110;
+		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldOrientation_LOD0 = 111;
+		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_GenericScale_LOD0 = 112;
+		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldPosition_LOD0 = 113;
+		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldOrientation_LOD0 = 114;
+		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_GenericScale_LOD0 = 115;
+		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id2_AISpawner_2011534467780421880_LOD0 = 116;
+		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0 = 117;
+		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0 = 118;
+		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0 = 119;
+		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321_LOD0 = 120;
+		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_Health_6674255513578300028_LOD0 = 121;
 		public const uint InternalAuthorityRequest = 0;
 		public const uint InternalAuthorityTransfer = 1;
 		public const uint InternalQuerySynced = 2;
 		public const uint InternalAdoptOrphan = 3;
 		public const uint InternalPersistenceReady = 4;
 		public const uint InternalGenericCommand = 5;
-		public const uint InternalFirst__char_32_Person__char_32_Player = 0;
 
 		private static readonly Dictionary<uint, string> componentNamesForTypeIds = new Dictionary<uint, string>() {
 			{ 0, "WorldPosition" },
@@ -255,31 +249,26 @@ namespace Coherence.Generated
 			{ 99, "GenericFieldULong3" },
 			{ 100, "GenericFieldColor0" },
 			{ 101, "GenericFieldColor1" },
-			{ 102, "First__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986" },
-			{ 103, "Enemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent" },
-			{ 104, "Enemy_id1_Health" },
-			{ 105, "DefencePoint_id2_Health_2952278128716974392" },
-			{ 106, "Spawner_id4_AISpawner_2011534467780421880" },
-			{ 107, "ArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldPosition_LOD0" },
-			{ 108, "ArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldOrientation_LOD0" },
-			{ 109, "ArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_GenericScale_LOD0" },
-			{ 110, "ArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_First__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986_LOD0" },
-			{ 111, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0" },
-			{ 112, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0" },
-			{ 113, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0" },
-			{ 114, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent_LOD0" },
-			{ 115, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id1_Health_LOD0" },
-			{ 116, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0" },
-			{ 117, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0" },
-			{ 118, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_GenericScale_LOD0" },
-			{ 119, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id2_Health_2952278128716974392_LOD0" },
-			{ 120, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldPosition_LOD0" },
-			{ 121, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldOrientation_LOD0" },
-			{ 122, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_GenericScale_LOD0" },
-			{ 123, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldPosition_LOD0" },
-			{ 124, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldOrientation_LOD0" },
-			{ 125, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_GenericScale_LOD0" },
-			{ 126, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id4_AISpawner_2011534467780421880_LOD0" },
+			{ 102, "DefencePoint_id0_Health_2952278128716974392" },
+			{ 103, "Spawner_id2_AISpawner_2011534467780421880" },
+			{ 104, "Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321" },
+			{ 105, "Enemy_id3_Health_6674255513578300028" },
+			{ 106, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0" },
+			{ 107, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0" },
+			{ 108, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_GenericScale_LOD0" },
+			{ 109, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id0_Health_2952278128716974392_LOD0" },
+			{ 110, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldPosition_LOD0" },
+			{ 111, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldOrientation_LOD0" },
+			{ 112, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_GenericScale_LOD0" },
+			{ 113, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldPosition_LOD0" },
+			{ 114, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldOrientation_LOD0" },
+			{ 115, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_GenericScale_LOD0" },
+			{ 116, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id2_AISpawner_2011534467780421880_LOD0" },
+			{ 117, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0" },
+			{ 118, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0" },
+			{ 119, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0" },
+			{ 120, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321_LOD0" },
+			{ 121, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_Health_6674255513578300028_LOD0" },
 		};
 
 		public static string ComponentNameForTypeId(uint typeId)
@@ -505,42 +494,22 @@ namespace Coherence.Generated
 					return GenericFieldColor0.Deserialize(inProtocolStream);
 				case InternalGenericFieldColor1:
 					return GenericFieldColor1.Deserialize(inProtocolStream);
-				case InternalFirst__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986:
-					return First__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986.Deserialize(inProtocolStream);
-				case InternalEnemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent:
-					return Enemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent.Deserialize(inProtocolStream);
-				case InternalEnemy_id1_Health:
-					return Enemy_id1_Health.Deserialize(inProtocolStream);
-				case InternalDefencePoint_id2_Health_2952278128716974392:
-					return DefencePoint_id2_Health_2952278128716974392.Deserialize(inProtocolStream);
-				case InternalSpawner_id4_AISpawner_2011534467780421880:
-					return Spawner_id4_AISpawner_2011534467780421880.Deserialize(inProtocolStream);
-				case InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldPosition_LOD0:
-					return WorldPosition.DeserializeArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldPosition_LOD0(inProtocolStream);
-				case InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldOrientation_LOD0:
-					return WorldOrientation.DeserializeArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldOrientation_LOD0(inProtocolStream);
-				case InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_GenericScale_LOD0:
-					return GenericScale.DeserializeArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_GenericScale_LOD0(inProtocolStream);
-				case InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_First__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986_LOD0:
-					return First__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986.DeserializeArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_First__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986_LOD0(inProtocolStream);
-				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0:
-					return WorldPosition.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0(inProtocolStream);
-				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0:
-					return WorldOrientation.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0(inProtocolStream);
-				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0:
-					return GenericScale.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0(inProtocolStream);
-				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent_LOD0:
-					return Enemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent_LOD0(inProtocolStream);
-				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id1_Health_LOD0:
-					return Enemy_id1_Health.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id1_Health_LOD0(inProtocolStream);
+				case InternalDefencePoint_id0_Health_2952278128716974392:
+					return DefencePoint_id0_Health_2952278128716974392.Deserialize(inProtocolStream);
+				case InternalSpawner_id2_AISpawner_2011534467780421880:
+					return Spawner_id2_AISpawner_2011534467780421880.Deserialize(inProtocolStream);
+				case InternalEnemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321:
+					return Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321.Deserialize(inProtocolStream);
+				case InternalEnemy_id3_Health_6674255513578300028:
+					return Enemy_id3_Health_6674255513578300028.Deserialize(inProtocolStream);
 				case InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0:
 					return WorldPosition.DeserializeArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0(inProtocolStream);
 				case InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0:
 					return WorldOrientation.DeserializeArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0(inProtocolStream);
 				case InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_GenericScale_LOD0:
 					return GenericScale.DeserializeArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_GenericScale_LOD0(inProtocolStream);
-				case InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id2_Health_2952278128716974392_LOD0:
-					return DefencePoint_id2_Health_2952278128716974392.DeserializeArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id2_Health_2952278128716974392_LOD0(inProtocolStream);
+				case InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id0_Health_2952278128716974392_LOD0:
+					return DefencePoint_id0_Health_2952278128716974392.DeserializeArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id0_Health_2952278128716974392_LOD0(inProtocolStream);
 				case InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldPosition_LOD0:
 					return WorldPosition.DeserializeArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldPosition_LOD0(inProtocolStream);
 				case InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldOrientation_LOD0:
@@ -553,8 +522,18 @@ namespace Coherence.Generated
 					return WorldOrientation.DeserializeArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldOrientation_LOD0(inProtocolStream);
 				case InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_GenericScale_LOD0:
 					return GenericScale.DeserializeArchetypeSpawner_4c242586da6a31949973a28c5fabc675_GenericScale_LOD0(inProtocolStream);
-				case InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id4_AISpawner_2011534467780421880_LOD0:
-					return Spawner_id4_AISpawner_2011534467780421880.DeserializeArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id4_AISpawner_2011534467780421880_LOD0(inProtocolStream);
+				case InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id2_AISpawner_2011534467780421880_LOD0:
+					return Spawner_id2_AISpawner_2011534467780421880.DeserializeArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id2_AISpawner_2011534467780421880_LOD0(inProtocolStream);
+				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0:
+					return WorldPosition.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0(inProtocolStream);
+				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0:
+					return WorldOrientation.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0(inProtocolStream);
+				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0:
+					return GenericScale.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0(inProtocolStream);
+				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321_LOD0:
+					return Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321_LOD0(inProtocolStream);
+				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_Health_6674255513578300028_LOD0:
+					return Enemy_id3_Health_6674255513578300028.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_Health_6674255513578300028_LOD0(inProtocolStream);
 				default:
 					return (null, 0, 0);
 			}
@@ -871,20 +850,17 @@ namespace Coherence.Generated
 				case InternalGenericFieldColor1:
 					GenericFieldColor1.Serialize((GenericFieldColor1)data, mask, protocolStream);
 					break;
-				case InternalFirst__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986:
-					First__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986.Serialize((First__char_32_Person__char_32_Player_id0_UnityEngine__char_46_Transform_7842236257865821986)data, mask, protocolStream);
+				case InternalDefencePoint_id0_Health_2952278128716974392:
+					DefencePoint_id0_Health_2952278128716974392.Serialize((DefencePoint_id0_Health_2952278128716974392)data, mask, protocolStream);
 					break;
-				case InternalEnemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent:
-					Enemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent.Serialize((Enemy_id1_UnityEngine__char_46_AI__char_46_NavMeshAgent)data, mask, protocolStream);
+				case InternalSpawner_id2_AISpawner_2011534467780421880:
+					Spawner_id2_AISpawner_2011534467780421880.Serialize((Spawner_id2_AISpawner_2011534467780421880)data, mask, protocolStream);
 					break;
-				case InternalEnemy_id1_Health:
-					Enemy_id1_Health.Serialize((Enemy_id1_Health)data, mask, protocolStream);
+				case InternalEnemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321:
+					Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321.Serialize((Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321)data, mask, protocolStream);
 					break;
-				case InternalDefencePoint_id2_Health_2952278128716974392:
-					DefencePoint_id2_Health_2952278128716974392.Serialize((DefencePoint_id2_Health_2952278128716974392)data, mask, protocolStream);
-					break;
-				case InternalSpawner_id4_AISpawner_2011534467780421880:
-					Spawner_id4_AISpawner_2011534467780421880.Serialize((Spawner_id4_AISpawner_2011534467780421880)data, mask, protocolStream);
+				case InternalEnemy_id3_Health_6674255513578300028:
+					Enemy_id3_Health_6674255513578300028.Serialize((Enemy_id3_Health_6674255513578300028)data, mask, protocolStream);
 					break;
 			}
 		}
@@ -916,8 +892,6 @@ namespace Coherence.Generated
 		{
 			switch (inputType)
 			{
-				case Definition.InternalFirst__char_32_Person__char_32_Player:
-					return First__char_32_Person__char_32_Player.Deserialize(bitStream);
 				default:
 					break;
 			}
@@ -998,9 +972,6 @@ namespace Coherence.Generated
 
 			switch (inputType)
 			{
-				case Definition.InternalFirst__char_32_Person__char_32_Player:
-					First__char_32_Person__char_32_Player.Serialize((First__char_32_Person__char_32_Player)inputData.Input, bitStream);
-					break;
 				default:
 					break;
 			}

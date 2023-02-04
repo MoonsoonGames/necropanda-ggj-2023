@@ -128,9 +128,9 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Player_d8263f41a789c7b4d99d257a64a29b99
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer_id2, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncPlayer_id1, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
