@@ -10,7 +10,7 @@ public class IsometricCharacterController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        moveDirection = new Vector3(horizontal, vertical, 0);
+        moveDirection = new Vector3(horizontal,0, vertical );
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed * Time.deltaTime;
 
