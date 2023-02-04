@@ -56,11 +56,11 @@ public class PlantObject : MonoBehaviour
             Health health = item.GetComponent<Health>();
             if (health != null)
             {
-                if (item.gameObject.layer == plantLayer)
+                if ((plantLayer & (1 << item.gameObject.layer)) != 0)
                 {
                     health.Heal(plant.healing);
                 }
-                else if (item.gameObject.layer == enemyLayer)
+                else if ((enemyLayer & (1 << item.gameObject.layer)) != 0)
                 {
                     health.Damage(plant.damage);
                 }
@@ -70,8 +70,12 @@ public class PlantObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == plantLayer || other.gameObject.layer == enemyLayer)
+        if (affectTargets.Count > plant.maxTargets) return;
+
+        //https://forum.unity.com/threads/checking-if-a-layer-is-in-a-layer-mask.1190230/
+        if ((plant.targetLayers & (1 << other.gameObject.layer)) != 0)
         {
+            Debug.Log("Collided with + " + other.gameObject.name + " with layer " + other.gameObject.layer.ToString() + " || " + plantLayer.ToString());
             affectTargets.Add(other.gameObject);
         }
     }

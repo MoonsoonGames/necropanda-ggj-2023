@@ -15,13 +15,19 @@ MonoBehaviour:
   plantName: Spores
   plantObj: {fileID: 4428920011090734225, guid: d765de643a6a3a84481a9718beb599b3,
     type: 3}
-  health: 10
+  health: 20
   sprite: {fileID: -348695466, guid: 69f4a4d7abf03b14498ed7233e71d5e7, type: 3}
   buildSurfaces: 01000000
   waterCost: 1
   surfaceModifier: 3
   radius: 3
-  damage: 0
-  healing: 0
+  damage: 1
+  healing: 1
   confusion: 0
   slow: 0
+  stun: 0
+  tickTime: 1
+  maxTargets: 20
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 192
