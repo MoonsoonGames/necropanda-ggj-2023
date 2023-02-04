@@ -13,13 +13,45 @@ public class GridSpace : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = selected ? new Color(0, 1, 0, 0.4f) : new Color(1, 0, 0, 0.4f);
+        switch (surface)
+        {
+            case E_Surfaces.Open:
+                Gizmos.color = selected ? new Color(0, 1, 0, 0.5f) : new Color(0, 1, 0, 0.2f);
+                break;
+            case E_Surfaces.Slowed:
+                Gizmos.color = selected ? new Color(1f, 0.4f, 0f, 0.5f) : new Color(1f, 0.4f, 0f, 0.2f);
+                break;
+            case E_Surfaces.Water:
+                Gizmos.color = selected ? new Color(0, 0, 1, 0.5f) : new Color(0, 0, 1, 0.2f);
+                break;
+            case E_Surfaces.Closed:
+                Gizmos.color = selected ? new Color(1, 0, 0, 0.5f) : new Color(1, 0, 0, 0.2f);
+                break;
+            case E_Surfaces.Null:
+                Gizmos.color = selected ? new Color(0, 0, 0, 0.8f) : new Color(0, 0, 0, 0.4f);
+                break;
+        }
+        
         Gizmos.DrawCube(transform.position, size);
     }
 
-    public void Selected(bool selected)
+    public void Selected(bool selected, BuildMenu buildMenu)
     {
         this.selected = selected;
-        //change color to green
+
+        if (selected)
+        {
+            buildMenu.SetOpen(surface);
+        }
+        else
+        {
+            buildMenu.SetOpen(E_Surfaces.Null);
+        }
+    }
+
+    public void SetupSize(Vector3 size)
+    {
+        this.size = size;
+        GetComponent<BoxCollider>().size = size;
     }
 }

@@ -8,6 +8,19 @@ public class MouseSelect : MonoBehaviour
 
     GridSpace selectedSpace;
 
+    BuildMenu buildMenu;
+
+    private void Start()
+    {
+        SetupReferences();
+    }
+
+    void SetupReferences()
+    {
+        buildMenu = GetComponent<BuildMenu>();
+        buildMenu.SetOpen(E_Surfaces.Null);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -26,15 +39,15 @@ public class MouseSelect : MonoBehaviour
                 if (space!= null)
                 {
                     if (selectedSpace != null)
-                        selectedSpace.Selected(false);
-                    space.Selected(true);
+                        selectedSpace.Selected(false, buildMenu);
+                    space.Selected(true, buildMenu);
                     selectedSpace = space;
                 }
             }
             else
             {
                 if (selectedSpace != null)
-                    selectedSpace.Selected(false);
+                    selectedSpace.Selected(false, buildMenu);
             }
         }
     }

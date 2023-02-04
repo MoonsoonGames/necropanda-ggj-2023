@@ -5,9 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewPlant", menuName = "Plants", order = 0)]
 public class Plant : ScriptableObject
 {
+    public string plantName;
     public int health = 10;
-    public Sprite image;
-    public E_Surfaces[] buildSurfaces = new E_Surfaces[1];
+    public Sprite sprite;
+    public List<E_Surfaces> buildSurfaces = new List<E_Surfaces>();
 
     public int waterCost = 1;
     public E_Surfaces surfaceModifier = E_Surfaces.Closed;
@@ -22,5 +23,5 @@ public class Plant : ScriptableObject
 
 public enum E_Surfaces
 {
-    Open, Slowed, Water, Closed
+    Open, Slowed, Water, Closed, Null
 }

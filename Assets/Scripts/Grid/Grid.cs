@@ -8,7 +8,7 @@ public class Grid : MonoBehaviour
 
     public float gridSpacing = 1.2f;
     public Vector2Int gridSize = new Vector2Int(5, 5);
-
+    public Vector3 spaceSize = new Vector3(1, 0.2f, 1);
     public List<GridSpace> spaces;
 
     [ContextMenu("Setup Grid")]
@@ -27,6 +27,7 @@ public class Grid : MonoBehaviour
 
                 GridSpace spaceScript = spaceRef.GetComponent<GridSpace>();
                 spaces.Add(spaceScript);
+                spaceScript.SetupSize(spaceSize);
             }
         }
 
@@ -91,5 +92,30 @@ public class Grid : MonoBehaviour
     bool WithinArray(int i)
     {
         return spaces.Count > i && i >= 0;
+    }
+
+    [ContextMenu("Randomize Grid Surfaces")]
+    public void RandomizeGridSurfaces()
+    {
+        foreach (var item in spaces)
+        {
+            int randInt = Random.Range(0, 4);
+
+            switch (randInt)
+            {
+                case 0:
+                    item.surface = E_Surfaces.Open;
+                    break;
+                case 1:
+                    item.surface = E_Surfaces.Slowed;
+                    break;
+                case 2:
+                    item.surface = E_Surfaces.Water;
+                    break;
+                case 3:
+                    item.surface = E_Surfaces.Closed;
+                    break;
+            }
+        }
     }
 }
