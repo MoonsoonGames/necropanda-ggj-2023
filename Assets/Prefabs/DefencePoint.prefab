@@ -190,9 +190,9 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: DefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncDefencePoint, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncDefencePoint_id0, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
