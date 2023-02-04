@@ -6,13 +6,14 @@ public class AgentMovement : MonoBehaviour
 {
     private Vector3 target;
     public NavMeshAgent agent;
+    public LayerMask mask;
 
     // Start is called before the first frame update
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
-        agent.updatePosition = false;
+        agent.updateRotation = true;
+        agent.updatePosition = true;
     }
 
     // Update is called once per frame
@@ -26,7 +27,15 @@ public class AgentMovement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 500, mask))
+            {
+                Debug.Log("Selected Destination");
+                target = hit.point;
+            }
         }
     }
 
