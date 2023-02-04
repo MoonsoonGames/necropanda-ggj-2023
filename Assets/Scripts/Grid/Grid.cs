@@ -27,7 +27,7 @@ public class Grid : MonoBehaviour
 
                 GridSpace spaceScript = spaceRef.GetComponent<GridSpace>();
                 spaces.Add(spaceScript);
-                spaceScript.SetupSize(spaceSize);
+                spaceScript.SetupSize(spaceSize, new Vector3(gridSpacing, spaceSize.y, gridSpacing));
             }
         }
 

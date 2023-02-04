@@ -10,10 +10,13 @@ public class GridSpace : MonoBehaviour
 
     public List<GridSpace> neighbours = new List<GridSpace>();
 
+    MeshRenderer meshRenderer;
+
     bool selected = false;
 
     private void Start()
     {
+        meshRenderer = GetComponentInChildren<MeshRenderer>();
         currentSurface = baseSurface;
     }
 
@@ -21,30 +24,7 @@ public class GridSpace : MonoBehaviour
     {
         baseSurface = surface;
         currentSurface = surface;
-    }
-
-    private void OnDrawGizmos()
-    {
-        switch (currentSurface)
-        {
-            case E_Surfaces.Open:
-                Gizmos.color = selected ? new Color(0, 1, 0, 0.5f) : new Color(0, 1, 0, 0.2f);
-                break;
-            case E_Surfaces.Marsh:
-                Gizmos.color = selected ? new Color(1f, 0.4f, 0f, 0.5f) : new Color(1f, 0.4f, 0f, 0.2f);
-                break;
-            case E_Surfaces.Water:
-                Gizmos.color = selected ? new Color(0, 0, 1, 0.5f) : new Color(0, 0, 1, 0.2f);
-                break;
-            case E_Surfaces.Closed:
-                Gizmos.color = selected ? new Color(1, 0, 0, 0.5f) : new Color(1, 0, 0, 0.2f);
-                break;
-            case E_Surfaces.Null:
-                Gizmos.color = selected ? new Color(0, 0, 0, 0.8f) : new Color(0, 0, 0, 0.4f);
-                break;
-        }
-        
-        Gizmos.DrawCube(transform.position, size);
+        UpdateMaterial();
     }
 
     public void Selected(bool selected, BuildMenu buildMenu)
@@ -59,22 +39,55 @@ public class GridSpace : MonoBehaviour
         {
             buildMenu.SetOpen(E_Surfaces.Null);
         }
+
+        UpdateMaterial();
     }
 
-    public void SetupSize(Vector3 size)
+    public void SetupSize(Vector3 cubeSize, Vector3 colliderSize)
     {
-        this.size = size;
-        GetComponent<BoxCollider>().size = size;
+        this.size = cubeSize;
+        meshRenderer = GetComponentInChildren<MeshRenderer>();
+        meshRenderer.gameObject.transform.localScale = cubeSize;
+        UpdateMaterial();
+
+        GetComponent<BoxCollider>().size = colliderSize;
     }
 
     public void GrowPlant(Plant plant)
     {
         currentSurface = plant.surfaceModifier == E_Surfaces.Null ? baseSurface : plant.surfaceModifier;
         MouseSelect.instance.GetBuildMenu().SetOpen(currentSurface);
+        UpdateMaterial();
     }
 
     public void DestroyPlant()
     {
         currentSurface = baseSurface;
+        UpdateMaterial();
+    }
+
+    public Material[] baseMats;
+    public Material[] selectMats;
+
+    public void UpdateMaterial()
+    {
+        switch (currentSurface)
+        {
+            case E_Surfaces.Open:
+                meshRenderer.material = selected ? selectMats[0] : baseMats[0];
+                break;
+            case E_Surfaces.Marsh:
+                meshRenderer.material = selected ? selectMats[1] : baseMats[1];
+                break;
+            case E_Surfaces.Water:
+                meshRenderer.material = selected ? selectMats[2] : baseMats[2];
+                break;
+            case E_Surfaces.Closed:
+                meshRenderer.material = selected ? selectMats[3] : baseMats[3];
+                break;
+            case E_Surfaces.Null:
+                meshRenderer.material = selected ? selectMats[4] : baseMats[4];
+                break;
+        }
     }
 }
