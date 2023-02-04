@@ -272,7 +272,7 @@ MonoBehaviour:
     archetypeName: Enemy_8e3461cf8d4e4834688cfb7eaef98857
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncEnemy_id1, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncEnemy_id4, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
