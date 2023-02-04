@@ -21,6 +21,7 @@ public class PlantInfo : MonoBehaviour
     public void ButtonPressed()
     {
         //Check if plant can be built (cost)
+        MouseSelect.instance.canClick = false;
         MouseSelect.instance.GetCurrentSpace().GrowPlant(plant);
     }
 }

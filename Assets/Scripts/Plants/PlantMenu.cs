@@ -20,6 +20,7 @@ public class PlantMenu : MonoBehaviour
 
     public void ButtonPressed()
     {
+        MouseSelect.instance.canClick = false;
         MouseSelect.instance.GetBuildMenu().SetOpen(plant);
     }
 }

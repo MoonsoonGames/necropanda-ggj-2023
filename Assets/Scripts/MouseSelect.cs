@@ -23,11 +23,24 @@ public class MouseSelect : MonoBehaviour
         buildMenu.SetOpen(E_Surfaces.Null);
     }
 
+    public bool canClick = true;
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("down");
+        }
+        
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (canClick == false)
+            {
+                canClick = true;
+                return;
+            }
+
             Debug.Log("Mouse down");
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
