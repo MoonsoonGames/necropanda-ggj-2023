@@ -7,12 +7,14 @@ public class NPC : MonoBehaviour
 {
     public NavMeshAgent agent;
     public AIState currentState;
-    protected GameObject[] regions;
+    protected GameObject[] targets;
+
+    public GameObject target;
 
     public virtual void SetupAI()
     {
         agent = this.GetComponent<NavMeshAgent>();
-        FindRegions();
+        FindTargets();
         SetDestination(transform.position);
     }
 
@@ -30,14 +32,15 @@ public class NPC : MonoBehaviour
     {
         agent.isStopped = true;
         currentState = state;
+        agent.isStopped = false;
     }
 
     [ContextMenu("Find Regions")]
-    private void FindRegions()
+    public void FindTargets()
     {
-        regions = new GameObject[0];
-        regions = GameObject.FindGameObjectsWithTag("Region");
-        Debug.Log($"Found {regions.Length} regions.");
+        targets = new GameObject[0];
+        targets = GameObject.FindGameObjectsWithTag("Region");
+        Debug.Log($"Found {targets.Length} targets.");
     }
 }
 
@@ -48,6 +51,7 @@ public class NPC : MonoBehaviour
 public enum AIState
 {
     Nothing,
-    Targetting
+    Targetting,
+    Attacking
 }
 

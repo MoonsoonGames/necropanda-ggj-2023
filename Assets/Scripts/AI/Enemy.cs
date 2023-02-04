@@ -5,10 +5,11 @@ using System.Linq;
 
 public class Enemy : NPC
 {
+    public int damageAmount;
+
     private void Start()
     {
         base.SetupAI();
-
     }
 
     private void Update()
@@ -21,34 +22,56 @@ public class Enemy : NPC
         switch (base.currentState)
         {
             case AIState.Nothing:
-                // stop the AI
-                base.currentState = AIState.Targetting;
+                SetAIState(AIState.Targetting);
                 break;
 
             case AIState.Targetting:
                 Debug.Log(GetClosestTarget());
                 base.SetDestination(GetClosestTarget());
+                if (base.agent.remainingDistance < 5)
+                {
+                    SetAIState(AIState.Attacking);
+                }
+                break;
+            case AIState.Attacking:
+                // Make the target take damage
+                if (base.target.TryGetComponent(out IDamageable targetObject))
+                {
+                    // damage
+                    targetObject.Damage(damageAmount);
+                    // If the target dies, go back to targetting
+                    if (targetObject == null)
+                    {
+                        SetAIState(AIState.Targetting);
+                    }
+                }
                 break;
         }
     }
 
     private Vector3 GetClosestTarget()
     {
-        Dictionary<GameObject, float> regionsAndDistances = new Dictionary<GameObject, float>();
+        // Update targets array
+        base.FindTargets();
 
-        foreach (GameObject region in base.regions)
+        Dictionary<GameObject, float> targetsAndDistances = new Dictionary<GameObject, float>();
+
+        foreach (GameObject target in base.targets)
         {
-            var dist = Vector3.Distance(base.agent.transform.position, region.transform.position);
-            regionsAndDistances[region] = dist;
+            var dist = Vector3.Distance(base.agent.transform.position, target.transform.position);
+            targetsAndDistances[target] = dist;
         }
 
         // Find the smallest distance (closest)
-        float closestDistance = regionsAndDistances.Values.Min();
-        GameObject closestRegion = regionsAndDistances.FirstOrDefault(x => x.Value == closestDistance).Key;
+        float closestDistance = targetsAndDistances.Values.Min();
+        GameObject closestTarget = targetsAndDistances.FirstOrDefault(x => x.Value == closestDistance).Key;
+
+        // Set the NPCs target, used in the attacking state.
+        base.target = closestTarget;
 
         // Pass out the closest region as a Vector3
-        Vector3 closestRegionPosition = closestRegion.transform.position;
+        Vector3 closestTargetPosition = closestTarget.transform.position;
 
-        return closestRegionPosition;
+        return closestTargetPosition;
     }
 }
