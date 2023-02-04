@@ -219,8 +219,60 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 7895192701486064600, guid: 820528c3a6a560f45ad821365a6f2fb6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820528c3a6a560f45ad821365a6f2fb6, type: 3}
+--- !u!114 &3906317798021635782 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3370495566288308192, guid: 820528c3a6a560f45ad821365a6f2fb6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1797042401898486054}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d9b3d2432935a49861c95d421aaf5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8126966780007245291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7509938957602405581, guid: 820528c3a6a560f45ad821365a6f2fb6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1797042401898486054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5003942964164476332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8126966780007245291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3906317798021635782}
+          m_TargetAssemblyTypeName: PlantInfo, Assembly-CSharp
+          m_MethodName: ButtonPressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!224 &8706211967559373196 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6927324727775643818, guid: 820528c3a6a560f45ad821365a6f2fb6,
