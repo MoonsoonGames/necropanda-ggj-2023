@@ -73,17 +73,7 @@ public class MainHUDHandler : MonoBehaviour
 
     void Update()
     {
-        #region Key presses
-
-        #region Shop
-        if(Input.GetKeyDown(KeyCode.Tab) && GamePaused == false)
-        {
-            ShopBTN();
-        }
-        #endregion
-
-        #region Pause
-        if (Input.GetKeyDown(KeyCode.Escape) && ShopOpen == false)
+        if(Input.GetKeyDown(KeyCode.Escape) && ShopOpen == false)
         {
             PauseBTN();
         }
@@ -91,12 +81,17 @@ public class MainHUDHandler : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape) && ShopOpen == true)
         {
             ShopOpen = false;
+            //AISpawner.instance.ShopClosed();
             HUD.SetActive(true);
             Shop.SetActive(false);
         }
-        #endregion
-
-        #endregion
+        
+        if(Input.GetKeyDown(KeyCode.Escape) && GamePaused == true)
+        {
+            GamePaused = false;
+            HUD.SetActive(true);
+            PauseMenu.SetActive(false);
+        }
 
         if(GamePaused == true)
         {
