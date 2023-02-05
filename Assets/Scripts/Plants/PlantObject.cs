@@ -59,6 +59,7 @@ public class PlantObject : MonoBehaviour
             if (item == null)
             {
                 affectTargets.Remove(item);
+                return;
             }
             else
             {
