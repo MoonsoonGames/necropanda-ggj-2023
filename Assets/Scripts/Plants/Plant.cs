@@ -19,7 +19,7 @@ public class Plant : ScriptableObject
     public int radius;
     public int damage;
     public int healing;
-    public bool confusion;
+    public float confusion;
     public bool slow;
     public bool stun;
     public float tickTime = 1f;

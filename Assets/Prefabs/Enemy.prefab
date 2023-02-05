@@ -192,9 +192,12 @@ MonoBehaviour:
   agent: {fileID: 0}
   currentState: 0
   target: {fileID: 0}
+  agentSpeed: 0
   damageAmount: 4
   attackTime: 5
   range: 2.71
+  maxWanderDuration: 30
+  timeLeftTillScriptCleanup: 0
 --- !u!114 &6674255513578300028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 995d306d44c7a534887017bcb1e75454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 20
 --- !u!136 &2164893918636717278
 CapsuleCollider:
   m_ObjectHideFlags: 0
