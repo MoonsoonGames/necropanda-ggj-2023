@@ -17,7 +17,7 @@ MonoBehaviour:
   health: 180
   sprite: {fileID: 21300000, guid: 7962f1dc2406a484abc9237153dcc93a, type: 3}
   buildSurfaces: 00000000
-  numberOfPlants: 2
+  numberOfPlants: 999999
   waterCost: 1
   surfaceModifier: 1
   radius: 11

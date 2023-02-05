@@ -17,16 +17,16 @@ MonoBehaviour:
   health: 80
   sprite: {fileID: 21300000, guid: 3a8f2fcc15b60564997c68ca183b0dc5, type: 3}
   buildSurfaces: 01000000
-  numberOfPlants: 2
+  numberOfPlants: 999998
   waterCost: 1
   surfaceModifier: 3
   radius: 7
-  damage: 2
-  healing: 4
-  confusion: 0
+  damage: 5
+  healing: 20
+  confusion: 3
   slow: 0
   stun: 0
-  tickTime: 1
+  tickTime: 5
   maxTargets: 20
   targetLayers:
     serializedVersion: 2
