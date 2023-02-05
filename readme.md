@@ -21,15 +21,15 @@ WSAD to move
 
 
 Credits:
-Artwork: 
 
+Artwork: 
 Background and sprites: Sean Watson
 Promotional Materials: Adam Williams
+
 Design: 
-
 Adam Williams
-Programming: 
 
+Programming: 
 Grid System: Andrew Scott
 Plant System: Andrew Scott
 Multiplayer Coherence integration: Matthew Roberts
