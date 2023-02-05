@@ -8,6 +8,7 @@ public class BuyPlant : MonoBehaviour
     public static BuyPlant instance;
     int water = 100;
     public TextMeshProUGUI text;
+    public TextMeshProUGUI enemytext;
 
     private void Start()
     {
@@ -29,5 +30,10 @@ public class BuyPlant : MonoBehaviour
     {
         this.water += water;
         text.text = this.water.ToString();
+    }
+
+    public void SetEnemyCount(int newCount)
+    {
+        enemytext.text = newCount.ToString();
     }
 }

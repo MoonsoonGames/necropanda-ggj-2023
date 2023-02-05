@@ -22,13 +22,11 @@ public class MainHUDHandler : MonoBehaviour
     public void ShopBTN()
     {
         Shop.SetActive(true);
-        HUD.SetActive(false);
         ShopOpen = true;
     }
     public void CloseShop()
     {
         ShopOpen = false;
-        HUD.SetActive(true);
         Shop.SetActive(false);
         AISpawner.instance.ShopClosed();
     }
