@@ -30,7 +30,7 @@ public class SplashScreenHandler : MonoBehaviour
 
     public void Multiplayer()
     {
-
+        SceneManager.LoadScene("GameSceneMultiplayer");
     }
 
     public void Info()
@@ -51,7 +51,7 @@ public class SplashScreenHandler : MonoBehaviour
             Buttons.SetActive(true);
             InfoText.SetActive(false);
         }
-        else if(ModeSelection.activeSelf == true)
+        else if (ModeSelection.activeSelf == true)
         {
             ModeSelection.SetActive(false);
             MainMenu.SetActive(true);
