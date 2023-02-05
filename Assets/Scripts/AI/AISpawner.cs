@@ -50,7 +50,8 @@ public class AISpawner : MonoBehaviour
 
         if (enemies.Length <= 1)
         {
-            mainHUDHandler.ShopBTN();
+            //mainHUDHandler.ShopBTN();
+            ShopClosed();
         }
     }
 
