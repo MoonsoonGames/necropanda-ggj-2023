@@ -11,8 +11,13 @@ public class AISpawner : MonoBehaviour
     private void Start()
     {
         instance = this;
-        mainHUDHandler = GameObject.FindObjectOfType<MainHUDHandler>();
-        //Invoke("SpawnNextWave", 15);
+		mainHUDHandler = GameObject.FindObjectOfType<MainHUDHandler>();
+		
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "GameScene")
+        {
+            Invoke("SpawnNextWave", 15);
+        }
     }
 
     public GameObject enemyPrefab;
