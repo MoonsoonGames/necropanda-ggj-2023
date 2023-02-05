@@ -30,6 +30,7 @@ public class MainHUDHandler : MonoBehaviour
         ShopOpen = false;
         HUD.SetActive(true);
         Shop.SetActive(false);
+        AISpawner.instance.ShopClosed();
     }
     public void PauseBTN()
     {
