@@ -9,9 +9,28 @@ public class SplashScreenHandler : MonoBehaviour
     public GameObject Buttons;
     public GameObject InfoText;
 
+    public GameObject MainMenu;
+    public GameObject ModeSelection;
+
+    void Start()
+    {
+        MainMenu.SetActive(true);
+        ModeSelection.SetActive(false);
+    }
     public void Play()
     {
+        MainMenu.SetActive(false);
+        ModeSelection.SetActive(true);
+    }
+
+    public void SinglePlayer()
+    {
         SceneManager.LoadScene("GameScene");
+    }
+
+    public void Multiplayer()
+    {
+
     }
 
     public void Info()
@@ -27,7 +46,15 @@ public class SplashScreenHandler : MonoBehaviour
 
     public void Back()
     {
-        Buttons.SetActive(true);
-        InfoText.SetActive(false);
+        if (InfoText.activeSelf == true)
+        {
+            Buttons.SetActive(true);
+            InfoText.SetActive(false);
+        }
+        else if(ModeSelection.activeSelf == true)
+        {
+            ModeSelection.SetActive(false);
+            MainMenu.SetActive(true);
+        }
     }
 }
