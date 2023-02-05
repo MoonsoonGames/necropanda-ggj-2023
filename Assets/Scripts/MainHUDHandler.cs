@@ -49,7 +49,7 @@ public class MainHUDHandler : MonoBehaviour
         ShopP1.SetActive(true);
         ShopP2.SetActive(false);
     }
-
+    
     public void Quit()
     {
         ConfirmPopup.SetActive(true);
@@ -64,7 +64,7 @@ public class MainHUDHandler : MonoBehaviour
         ConfirmPopup.SetActive(false);
         PauseMenu.SetActive(true);
     }
-
+    
     public void Resume()
     {
         GamePaused = false;
@@ -73,35 +73,31 @@ public class MainHUDHandler : MonoBehaviour
 
     void Update()
     {
-        #region Key presses
-
-        #region Shop
-        if (Input.GetKeyDown(KeyCode.Tab) && GamePaused == false)
-        {
-            ShopBTN();
-        }
-        #endregion
-
-        #region Pause
-        if (Input.GetKeyDown(KeyCode.Escape) && ShopOpen == false)
+        if(Input.GetKeyDown(KeyCode.Escape) && ShopOpen == false)
         {
             PauseBTN();
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) && ShopOpen == true)
+        if(Input.GetKeyDown(KeyCode.Escape) && ShopOpen == true)
         {
             ShopOpen = false;
+            //AISpawner.instance.ShopClosed();
             HUD.SetActive(true);
             Shop.SetActive(false);
         }
-        #endregion
+        
+        if(Input.GetKeyDown(KeyCode.Escape) && GamePaused == true)
+        {
+            GamePaused = false;
+            HUD.SetActive(true);
+            PauseMenu.SetActive(false);
+        }
 
-        #endregion
-
-        if (GamePaused == true)
+        if(GamePaused == true)
         {
             Time.timeScale = 0;
         }
+
         else
         {
             Time.timeScale = 1;
