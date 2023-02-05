@@ -10,7 +10,7 @@ public class AISpawner : MonoBehaviour
     {
         instance = this;
 
-        Invoke("SpawnNextWave", 15);
+        //Invoke("SpawnNextWave", 15);
     }
 
     public GameObject enemyPrefab;
@@ -45,7 +45,7 @@ public class AISpawner : MonoBehaviour
     }
 
     [ContextMenu("Spawn next wave")]
-    void SpawnNextWave()
+    public void SpawnNextWave()
     {
         if (currentWave >= waves.Length)
         {
