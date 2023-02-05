@@ -52,6 +52,23 @@ public class PlantObject : MonoBehaviour
 
     private void Tick()
     {
+        int water = 0;
+
+        switch (originalSurface)
+        {
+            case E_Surfaces.Open:
+                water = plant.openWater;
+                break;
+            case E_Surfaces.Marsh:
+                water = plant.marshWater;
+                break;
+            case E_Surfaces.Water:
+                water = plant.waterWater;
+                break;
+        }
+
+        BuyPlant.instance.ChangeWater(water);
+
         if (affectTargets.Count <= 0) return;
         int i = 0;
 
@@ -89,23 +106,6 @@ public class PlantObject : MonoBehaviour
                 }
             }
         }
-
-        int water = 0;
-
-        switch (originalSurface)
-        {
-            case E_Surfaces.Open:
-                water = plant.openWater;
-                break;
-            case E_Surfaces.Marsh:
-                water = plant.marshWater;
-                break;
-            case E_Surfaces.Water:
-                water = plant.waterWater;
-                break;
-        }
-
-        //add water to managers
     }
 
     private void OnTriggerEnter(Collider other)

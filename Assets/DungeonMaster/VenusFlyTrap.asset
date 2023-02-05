@@ -18,14 +18,15 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: c5dc7f706e4be9d49a6bf097fa9b9de6, type: 3}
   buildSurfaces: 0000000001000000
   numberOfPlants: 999998
-  waterCost: 1
+  waterCost: 100
   surfaceModifier: 3
   radius: 5
   damage: 20
   healing: 0
   confusion: 0
-  slow: 0
-  stun: 0
+  openWater: 0
+  marshWater: 0
+  waterWater: 0
   tickTime: 2
   maxTargets: 1
   targetLayers:

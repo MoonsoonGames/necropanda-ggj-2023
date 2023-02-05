@@ -412,10 +412,179 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1374294862260198763, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374294862260198763, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374294862260198763, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6468834750807098813}
+    - target: {fileID: 1374294862260198763, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374294862260198763, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuySeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374294862260198763, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BuyPlant, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374294862260198763, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 23638be181125414aa4b5fa68106abf8,
+        type: 2}
+    - target: {fileID: 1374294862260198763, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Plant, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768012247723689721, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768012247723689721, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768012247723689721, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6468834750807098813}
+    - target: {fileID: 1768012247723689721, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768012247723689721, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuySeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768012247723689721, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BuyPlant, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768012247723689721, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cf34f2669f84d742b6118c89e2d5d7c,
+        type: 2}
+    - target: {fileID: 1768012247723689721, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Plant, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002825294879970045, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002825294879970045, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002825294879970045, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6468834750807098813}
+    - target: {fileID: 3002825294879970045, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002825294879970045, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuySeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002825294879970045, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BuyPlant, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002825294879970045, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 9990f0446268b2d479838736eeb986ed,
+        type: 2}
+    - target: {fileID: 3002825294879970045, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Plant, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3584555463270666385, guid: c9a331d556fbf284693d2ee11c046d8c,
         type: 3}
       propertyPath: m_Name
       value: Main HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574166358847304712, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseBTN
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657262059614700679, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657262059614700679, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657262059614700679, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6468834750807098813}
+    - target: {fileID: 6657262059614700679, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657262059614700679, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuySeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657262059614700679, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BuyPlant, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657262059614700679, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 49287f3558eec2a46988a2ceefab6719,
+        type: 2}
+    - target: {fileID: 6657262059614700679, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Plant, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7676542035642825467, guid: c9a331d556fbf284693d2ee11c046d8c,
         type: 3}
@@ -427,6 +596,47 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9181068902810419437, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181068902810419437, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181068902810419437, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6468834750807098813}
+    - target: {fileID: 9181068902810419437, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181068902810419437, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuySeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181068902810419437, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BuyPlant, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181068902810419437, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 1734c43ab55dc594f8e892fe78a8543d,
+        type: 2}
+    - target: {fileID: 9181068902810419437, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Plant, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9a331d556fbf284693d2ee11c046d8c, type: 3}
 --- !u!224 &2240474473846386044 stripped
@@ -435,6 +645,37 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1950563810237959601}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3075726826993638688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3584555463270666385, guid: c9a331d556fbf284693d2ee11c046d8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1950563810237959601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6468834750807098813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3075726826993638688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb147b13526fd754199cdbcbeb8dc450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 5271515830325309041}
+--- !u!114 &5271515830325309041 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5925018317974938560, guid: c9a331d556fbf284693d2ee11c046d8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1950563810237959601}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6135093442126751297
 PrefabInstance:
   m_ObjectHideFlags: 0

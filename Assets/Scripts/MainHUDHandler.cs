@@ -33,9 +33,10 @@ public class MainHUDHandler : MonoBehaviour
     }
     public void PauseBTN()
     {
-        HUD.SetActive(false);
-        PauseMenu.SetActive(true);
-        GamePaused = true;
+        GamePaused = !GamePaused;
+
+        HUD.SetActive(!GamePaused);
+        PauseMenu.SetActive(GamePaused);
     }
 
     public void Next()
@@ -59,38 +60,30 @@ public class MainHUDHandler : MonoBehaviour
     {
         Application.Quit();
     }
-    public void ConfirmResume()
-    {
-        ConfirmPopup.SetActive(false);
-        PauseMenu.SetActive(true);
-    }
-    
-    public void Resume()
-    {
-        GamePaused = false;
-    }
+
     #endregion
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && ShopOpen == false)
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
-            PauseBTN();
-        }
-
-        if(Input.GetKeyDown(KeyCode.Escape) && ShopOpen == true)
-        {
-            ShopOpen = false;
-            //AISpawner.instance.ShopClosed();
-            HUD.SetActive(true);
-            Shop.SetActive(false);
-        }
-        
-        if(Input.GetKeyDown(KeyCode.Escape) && GamePaused == true)
-        {
-            GamePaused = false;
-            HUD.SetActive(true);
-            PauseMenu.SetActive(false);
+            if (ShopOpen == true)
+            {
+                ShopOpen = false;
+                AISpawner.instance.ShopClosed();
+                HUD.SetActive(true);
+                Shop.SetActive(false);
+            }
+            else if (GamePaused == true)
+            {
+                GamePaused = false;
+                HUD.SetActive(true);
+                PauseMenu.SetActive(false);
+            }
+            else
+            {
+                PauseBTN();
+            }
         }
 
         if(GamePaused == true)
