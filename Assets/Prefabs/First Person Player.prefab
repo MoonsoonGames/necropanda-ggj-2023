@@ -522,7 +522,7 @@ MonoBehaviour:
     archetypeName: First__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncFirst__char_32_Person__char_32_Player_id0,
+  bakedScriptType: Coherence.Generated.CoherenceSyncFirst__char_32_Person__char_32_Player_id4,
     Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0

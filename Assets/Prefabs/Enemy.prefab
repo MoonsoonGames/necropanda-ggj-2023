@@ -514,6 +514,7 @@ GameObject:
   - component: {fileID: 6674255513578300028}
   - component: {fileID: 2164893918636717278}
   - component: {fileID: 3645936643340910620}
+  - component: {fileID: 2083566054339558633}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
@@ -576,7 +577,7 @@ MonoBehaviour:
   target: {fileID: 0}
   agentSpeed: 0
   damageAmount: 3
-  attackTime: 5
+  attackTime: 2
   range: 2.71
   maxWanderDuration: 30
   timeLeftTillScriptCleanup: 0
@@ -705,6 +706,8 @@ MonoBehaviour:
     - component: {fileID: 9082586718439864851}
       lodStepsActive: 1
     - component: {fileID: 3429859211808548199}
+      lodStepsActive: 1
+    - component: {fileID: 2083566054339558633}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
@@ -2010,6 +2013,26 @@ MonoBehaviour:
         asm: Coherence.Toolkit}
       data:
         component: {fileID: 6674255513578300028}
+--- !u!95 &2083566054339558633
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5713996564709775303}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19ce0e486e70ca741b1aed56f9a0df69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6053080499604891819
 GameObject:
   m_ObjectHideFlags: 0
