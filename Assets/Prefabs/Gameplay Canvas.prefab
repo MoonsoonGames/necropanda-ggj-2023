@@ -307,6 +307,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8766539346728489659}
     m_Modifications:
+    - target: {fileID: 233119363945018317, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_text
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 289928961512104141, guid: c9a331d556fbf284693d2ee11c046d8c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -411,6 +416,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464083905485216688, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_text
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 950230610008611478, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_text
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1374294862260198763, guid: c9a331d556fbf284693d2ee11c046d8c,
         type: 3}
@@ -535,10 +550,37 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: Plant, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3132690151707683154, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_text
+      value: 'Health: 180
+
+        Radius: 1
+
+        Creates an area for Spores
+        to grow'
+      objectReference: {fileID: 0}
     - target: {fileID: 3584555463270666385, guid: c9a331d556fbf284693d2ee11c046d8c,
         type: 3}
       propertyPath: m_Name
       value: Main HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812533541513151353, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_text
+      value: 'Health: 200
+
+        Radius: 1
+
+        Blocks paths and generates
+        water. Placing on water or marsh generates more water.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3932041395123691573, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_text
+      value: '50
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 4574166358847304712, guid: c9a331d556fbf284693d2ee11c046d8c,
         type: 3}
@@ -586,6 +628,28 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: Plant, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 6785423944404969872, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_text
+      value: 'Health: 100
+
+        Radius: 5
+
+        Damage: 20 damage to a single
+        target every 2 seconds'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922177139310494430, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_text
+      value: 'Health: 80
+
+        Radius: 7
+
+        Damage: 10 every 5 seconds
+
+        Heals
+        plants health and confuses enemies'
+      objectReference: {fileID: 0}
     - target: {fileID: 7676542035642825467, guid: c9a331d556fbf284693d2ee11c046d8c,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -595,6 +659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9126469079872014389, guid: c9a331d556fbf284693d2ee11c046d8c,
+        type: 3}
+      propertyPath: m_text
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9181068902810419437, guid: c9a331d556fbf284693d2ee11c046d8c,
         type: 3}
@@ -664,9 +733,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 5271515830325309041}
+  enemytext: {fileID: 6770610573142833459}
 --- !u!114 &5271515830325309041 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5925018317974938560, guid: c9a331d556fbf284693d2ee11c046d8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1950563810237959601}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6770610573142833459 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5109264519836333186, guid: c9a331d556fbf284693d2ee11c046d8c,
     type: 3}
   m_PrefabInstance: {fileID: 1950563810237959601}
   m_PrefabAsset: {fileID: 0}

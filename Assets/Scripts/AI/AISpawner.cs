@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class AISpawner : MonoBehaviour
 {
@@ -47,6 +48,7 @@ public class AISpawner : MonoBehaviour
         }
 
         Enemy[] enemies = GameObject.FindObjectsOfType<Enemy>();
+        BuyPlant.instance.SetEnemyCount(enemies.Length - 1);
 
         if (enemies.Length <= 1)
         {
@@ -80,6 +82,8 @@ public class AISpawner : MonoBehaviour
     void SpawnEnemy()
     {
         Instantiate(enemyPrefab, transform.position, transform.rotation);
+        Enemy[] enemies = GameObject.FindObjectsOfType<Enemy>();
+        BuyPlant.instance.SetEnemyCount(enemies.Length);
     }
 
     void WinGame()
