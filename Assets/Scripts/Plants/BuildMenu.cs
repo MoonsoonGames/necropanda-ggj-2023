@@ -52,7 +52,7 @@ public class BuildMenu : MonoBehaviour
 
         foreach (var item in allPlants)
         {
-            if (item.buildSurfaces.Contains(surface))
+            if (item.buildSurfaces.Contains(surface) && item.numberOfPlants > 0)
             {
                 GameObject plantOption = Instantiate(plantOptionPrefab, grid.transform) as GameObject;
                 availablePlants.Add(plantOption);

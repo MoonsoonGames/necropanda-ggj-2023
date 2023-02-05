@@ -28,12 +28,13 @@ public class Plant : ScriptableObject
 
     public void SpawnPlant(GridSpace space)
     {
-        if (numberOfPlants > 0)
+        if (numberOfPlants > 0 && plantObj != null)
         {
-            //check that the plant can be built on the specified surface
             GameObject plant = Instantiate(plantObj, space.transform) as GameObject;
             plant.transform.localPosition = new Vector3(0, 0.1f, 0);
             plant.GetComponent<PlantObject>().Setup(this, space);
+
+            numberOfPlants--;
         }
     }
 }
