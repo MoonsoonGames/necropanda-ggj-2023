@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: 2a42f10d04ac1d84fa448ea831002941
   - enabled: 1
     path: Assets/Scenes/GameSceneMultiplayer.unity
-    guid: efec59cc0eacf8648a2b17cfff14a3bf
+    guid: 0b8512e459c470b4cb65dfde4308a4fe
   - enabled: 1
     path: Assets/Scenes/LoseGame.unity
     guid: cd67c85bf403eab4d95ae672ad2b9d5d

@@ -121,6 +121,78 @@ namespace Coherence.Generated
 
 			return (val, mask, 0);
 		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypePlant_d765de643a6a3a84481a9718beb599b3_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeSpores_200a876feaaaf244589706ac69e6dc16_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
+		public static (WorldPosition, uint, uint?) DeserializeArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_WorldPosition_LOD0(InProtocolBitStream bitStream)
+		{
+			var mask = (uint)0;
+			var val = new WorldPosition();
+			if (bitStream.ReadMask())
+			{
+				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
+				mask |= 0b00000000000000000000000000000001;
+			}
+
+			return (val, mask, 0);
+		}
 
 		/// <summary>
 		/// Resets byte array references to the local array instance that is kept in the lastSentData.

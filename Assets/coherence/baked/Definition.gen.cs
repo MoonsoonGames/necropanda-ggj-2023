@@ -16,7 +16,7 @@ namespace Coherence.Generated
 
 	public class Definition : IDefinition
 	{
-		public const string schemaId = "fbc9720485ecea919145d6fdd4a0825dc478e4fb";
+		public const string schemaId = "3e01759310636a817de02474b0ca44e0ba7904cb";
 		public const uint InternalWorldPosition = 0;
 		public const uint InternalWorldOrientation = 1;
 		public const uint InternalLocalUser = 2;
@@ -126,31 +126,100 @@ namespace Coherence.Generated
 		public const uint InternalSpawner_id2_AISpawner_2011534467780421880 = 106;
 		public const uint InternalEnemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321 = 107;
 		public const uint InternalEnemy_id3_Health_6674255513578300028 = 108;
-		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0 = 109;
-		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0 = 110;
-		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_GenericScale_LOD0 = 111;
-		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id0_Health_2952278128716974392_LOD0 = 112;
-		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldPosition_LOD0 = 113;
-		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldOrientation_LOD0 = 114;
-		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_GenericScale_LOD0 = 115;
-		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_BoxCollider_222456919_LOD0 = 116;
-		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_Transform_4846655746960201064_LOD0 = 117;
-		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_SpriteRenderer_6764502162288539867_LOD0 = 118;
-		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldPosition_LOD0 = 119;
-		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldOrientation_LOD0 = 120;
-		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_GenericScale_LOD0 = 121;
-		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id2_AISpawner_2011534467780421880_LOD0 = 122;
-		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0 = 123;
-		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0 = 124;
-		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0 = 125;
-		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321_LOD0 = 126;
-		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_Health_6674255513578300028_LOD0 = 127;
+		public const uint InternalFirst__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986 = 109;
+		public const uint InternalLily__char_32_Pad_id5_PlantObject_703798951448450330 = 110;
+		public const uint InternalLily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200 = 111;
+		public const uint InternalLily__char_32_Pad_id5_Health_7105588657738653232 = 112;
+		public const uint InternalLily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821 = 113;
+		public const uint InternalLily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280 = 114;
+		public const uint InternalPlant_id6_PlantObject_4428920011090734227 = 115;
+		public const uint InternalPlant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224 = 116;
+		public const uint InternalPlant_id6_Health_1395163340710080267 = 117;
+		public const uint InternalPlant_id6_UnityEngine__char_46_Transform_4428920010626887975 = 118;
+		public const uint InternalPlant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974 = 119;
+		public const uint InternalVenus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192 = 120;
+		public const uint InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351 = 121;
+		public const uint InternalVenus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369 = 122;
+		public const uint InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718 = 123;
+		public const uint InternalSpores_id8_PlantObject_5444483082972953170 = 124;
+		public const uint InternalSpores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649 = 125;
+		public const uint InternalSpores_id8_Health_1977754536731014931 = 126;
+		public const uint InternalSpores_id8_UnityEngine__char_46_Transform_5188060417753529539 = 127;
+		public const uint InternalSpores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351 = 128;
+		public const uint InternalRoots_id9_PlantObject_4095048946780906312 = 129;
+		public const uint InternalRoots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054 = 130;
+		public const uint InternalRoots_id9_Health_1707105239468578422 = 131;
+		public const uint InternalRoots_id9_UnityEngine__char_46_Transform_1568436447820697733 = 132;
+		public const uint InternalRoots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324 = 133;
+		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0 = 134;
+		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0 = 135;
+		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_GenericScale_LOD0 = 136;
+		public const uint InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id0_Health_2952278128716974392_LOD0 = 137;
+		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldPosition_LOD0 = 138;
+		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldOrientation_LOD0 = 139;
+		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_GenericScale_LOD0 = 140;
+		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_BoxCollider_222456919_LOD0 = 141;
+		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_Transform_4846655746960201064_LOD0 = 142;
+		public const uint InternalArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_SpriteRenderer_6764502162288539867_LOD0 = 143;
+		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldPosition_LOD0 = 144;
+		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldOrientation_LOD0 = 145;
+		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_GenericScale_LOD0 = 146;
+		public const uint InternalArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id2_AISpawner_2011534467780421880_LOD0 = 147;
+		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0 = 148;
+		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0 = 149;
+		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0 = 150;
+		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321_LOD0 = 151;
+		public const uint InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_Health_6674255513578300028_LOD0 = 152;
+		public const uint InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldPosition_LOD0 = 153;
+		public const uint InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldOrientation_LOD0 = 154;
+		public const uint InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_GenericScale_LOD0 = 155;
+		public const uint InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_First__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986_LOD0 = 156;
+		public const uint InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_WorldPosition_LOD0 = 157;
+		public const uint InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_WorldOrientation_LOD0 = 158;
+		public const uint InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_GenericScale_LOD0 = 159;
+		public const uint InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_PlantObject_703798951448450330_LOD0 = 160;
+		public const uint InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200_LOD0 = 161;
+		public const uint InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_Health_7105588657738653232_LOD0 = 162;
+		public const uint InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821_LOD0 = 163;
+		public const uint InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280_LOD0 = 164;
+		public const uint InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_WorldPosition_LOD0 = 165;
+		public const uint InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_WorldOrientation_LOD0 = 166;
+		public const uint InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_GenericScale_LOD0 = 167;
+		public const uint InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_PlantObject_4428920011090734227_LOD0 = 168;
+		public const uint InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224_LOD0 = 169;
+		public const uint InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_Health_1395163340710080267_LOD0 = 170;
+		public const uint InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_Transform_4428920010626887975_LOD0 = 171;
+		public const uint InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974_LOD0 = 172;
+		public const uint InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_WorldPosition_LOD0 = 173;
+		public const uint InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_GenericScale_LOD0 = 174;
+		public const uint InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_WorldOrientation_LOD0 = 175;
+		public const uint InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192_LOD0 = 176;
+		public const uint InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351_LOD0 = 177;
+		public const uint InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369_LOD0 = 178;
+		public const uint InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_LOD0 = 179;
+		public const uint InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_WorldPosition_LOD0 = 180;
+		public const uint InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_WorldOrientation_LOD0 = 181;
+		public const uint InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_GenericScale_LOD0 = 182;
+		public const uint InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_PlantObject_5444483082972953170_LOD0 = 183;
+		public const uint InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649_LOD0 = 184;
+		public const uint InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_Health_1977754536731014931_LOD0 = 185;
+		public const uint InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_Transform_5188060417753529539_LOD0 = 186;
+		public const uint InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351_LOD0 = 187;
+		public const uint InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_WorldPosition_LOD0 = 188;
+		public const uint InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_WorldOrientation_LOD0 = 189;
+		public const uint InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_GenericScale_LOD0 = 190;
+		public const uint InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_PlantObject_4095048946780906312_LOD0 = 191;
+		public const uint InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054_LOD0 = 192;
+		public const uint InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_Health_1707105239468578422_LOD0 = 193;
+		public const uint InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_Transform_1568436447820697733_LOD0 = 194;
+		public const uint InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324_LOD0 = 195;
 		public const uint InternalAuthorityRequest = 0;
 		public const uint InternalAuthorityTransfer = 1;
 		public const uint InternalQuerySynced = 2;
 		public const uint InternalAdoptOrphan = 3;
 		public const uint InternalPersistenceReady = 4;
 		public const uint InternalGenericCommand = 5;
+		public const uint InternalFirst__char_32_Person__char_32_Player = 0;
 
 		private static readonly Dictionary<uint, string> componentNamesForTypeIds = new Dictionary<uint, string>() {
 			{ 0, "WorldPosition" },
@@ -262,25 +331,93 @@ namespace Coherence.Generated
 			{ 106, "Spawner_id2_AISpawner_2011534467780421880" },
 			{ 107, "Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321" },
 			{ 108, "Enemy_id3_Health_6674255513578300028" },
-			{ 109, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0" },
-			{ 110, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0" },
-			{ 111, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_GenericScale_LOD0" },
-			{ 112, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id0_Health_2952278128716974392_LOD0" },
-			{ 113, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldPosition_LOD0" },
-			{ 114, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldOrientation_LOD0" },
-			{ 115, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_GenericScale_LOD0" },
-			{ 116, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_BoxCollider_222456919_LOD0" },
-			{ 117, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_Transform_4846655746960201064_LOD0" },
-			{ 118, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_SpriteRenderer_6764502162288539867_LOD0" },
-			{ 119, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldPosition_LOD0" },
-			{ 120, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldOrientation_LOD0" },
-			{ 121, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_GenericScale_LOD0" },
-			{ 122, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id2_AISpawner_2011534467780421880_LOD0" },
-			{ 123, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0" },
-			{ 124, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0" },
-			{ 125, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0" },
-			{ 126, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321_LOD0" },
-			{ 127, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_Health_6674255513578300028_LOD0" },
+			{ 109, "First__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986" },
+			{ 110, "Lily__char_32_Pad_id5_PlantObject_703798951448450330" },
+			{ 111, "Lily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200" },
+			{ 112, "Lily__char_32_Pad_id5_Health_7105588657738653232" },
+			{ 113, "Lily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821" },
+			{ 114, "Lily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280" },
+			{ 115, "Plant_id6_PlantObject_4428920011090734227" },
+			{ 116, "Plant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224" },
+			{ 117, "Plant_id6_Health_1395163340710080267" },
+			{ 118, "Plant_id6_UnityEngine__char_46_Transform_4428920010626887975" },
+			{ 119, "Plant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974" },
+			{ 120, "Venus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192" },
+			{ 121, "Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351" },
+			{ 122, "Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369" },
+			{ 123, "Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718" },
+			{ 124, "Spores_id8_PlantObject_5444483082972953170" },
+			{ 125, "Spores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649" },
+			{ 126, "Spores_id8_Health_1977754536731014931" },
+			{ 127, "Spores_id8_UnityEngine__char_46_Transform_5188060417753529539" },
+			{ 128, "Spores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351" },
+			{ 129, "Roots_id9_PlantObject_4095048946780906312" },
+			{ 130, "Roots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054" },
+			{ 131, "Roots_id9_Health_1707105239468578422" },
+			{ 132, "Roots_id9_UnityEngine__char_46_Transform_1568436447820697733" },
+			{ 133, "Roots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324" },
+			{ 134, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0" },
+			{ 135, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0" },
+			{ 136, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_GenericScale_LOD0" },
+			{ 137, "ArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_DefencePoint_id0_Health_2952278128716974392_LOD0" },
+			{ 138, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldPosition_LOD0" },
+			{ 139, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_WorldOrientation_LOD0" },
+			{ 140, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_GenericScale_LOD0" },
+			{ 141, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_BoxCollider_222456919_LOD0" },
+			{ 142, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_Transform_4846655746960201064_LOD0" },
+			{ 143, "ArchetypePlayer_d8263f41a789c7b4d99d257a64a29b99_Player_id1_UnityEngine__char_46_SpriteRenderer_6764502162288539867_LOD0" },
+			{ 144, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldPosition_LOD0" },
+			{ 145, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_WorldOrientation_LOD0" },
+			{ 146, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_GenericScale_LOD0" },
+			{ 147, "ArchetypeSpawner_4c242586da6a31949973a28c5fabc675_Spawner_id2_AISpawner_2011534467780421880_LOD0" },
+			{ 148, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldPosition_LOD0" },
+			{ 149, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_WorldOrientation_LOD0" },
+			{ 150, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_GenericScale_LOD0" },
+			{ 151, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321_LOD0" },
+			{ 152, "ArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_Health_6674255513578300028_LOD0" },
+			{ 153, "ArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldPosition_LOD0" },
+			{ 154, "ArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldOrientation_LOD0" },
+			{ 155, "ArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_GenericScale_LOD0" },
+			{ 156, "ArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_First__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986_LOD0" },
+			{ 157, "ArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_WorldPosition_LOD0" },
+			{ 158, "ArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_WorldOrientation_LOD0" },
+			{ 159, "ArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_GenericScale_LOD0" },
+			{ 160, "ArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_PlantObject_703798951448450330_LOD0" },
+			{ 161, "ArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200_LOD0" },
+			{ 162, "ArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_Health_7105588657738653232_LOD0" },
+			{ 163, "ArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821_LOD0" },
+			{ 164, "ArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280_LOD0" },
+			{ 165, "ArchetypePlant_d765de643a6a3a84481a9718beb599b3_WorldPosition_LOD0" },
+			{ 166, "ArchetypePlant_d765de643a6a3a84481a9718beb599b3_WorldOrientation_LOD0" },
+			{ 167, "ArchetypePlant_d765de643a6a3a84481a9718beb599b3_GenericScale_LOD0" },
+			{ 168, "ArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_PlantObject_4428920011090734227_LOD0" },
+			{ 169, "ArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224_LOD0" },
+			{ 170, "ArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_Health_1395163340710080267_LOD0" },
+			{ 171, "ArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_Transform_4428920010626887975_LOD0" },
+			{ 172, "ArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974_LOD0" },
+			{ 173, "ArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_WorldPosition_LOD0" },
+			{ 174, "ArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_GenericScale_LOD0" },
+			{ 175, "ArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_WorldOrientation_LOD0" },
+			{ 176, "ArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192_LOD0" },
+			{ 177, "ArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351_LOD0" },
+			{ 178, "ArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369_LOD0" },
+			{ 179, "ArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_LOD0" },
+			{ 180, "ArchetypeSpores_200a876feaaaf244589706ac69e6dc16_WorldPosition_LOD0" },
+			{ 181, "ArchetypeSpores_200a876feaaaf244589706ac69e6dc16_WorldOrientation_LOD0" },
+			{ 182, "ArchetypeSpores_200a876feaaaf244589706ac69e6dc16_GenericScale_LOD0" },
+			{ 183, "ArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_PlantObject_5444483082972953170_LOD0" },
+			{ 184, "ArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649_LOD0" },
+			{ 185, "ArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_Health_1977754536731014931_LOD0" },
+			{ 186, "ArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_Transform_5188060417753529539_LOD0" },
+			{ 187, "ArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351_LOD0" },
+			{ 188, "ArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_WorldPosition_LOD0" },
+			{ 189, "ArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_WorldOrientation_LOD0" },
+			{ 190, "ArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_GenericScale_LOD0" },
+			{ 191, "ArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_PlantObject_4095048946780906312_LOD0" },
+			{ 192, "ArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054_LOD0" },
+			{ 193, "ArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_Health_1707105239468578422_LOD0" },
+			{ 194, "ArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_Transform_1568436447820697733_LOD0" },
+			{ 195, "ArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324_LOD0" },
 		};
 
 		public static string ComponentNameForTypeId(uint typeId)
@@ -520,6 +657,56 @@ namespace Coherence.Generated
 					return Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321.Deserialize(inProtocolStream);
 				case InternalEnemy_id3_Health_6674255513578300028:
 					return Enemy_id3_Health_6674255513578300028.Deserialize(inProtocolStream);
+				case InternalFirst__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986:
+					return First__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986.Deserialize(inProtocolStream);
+				case InternalLily__char_32_Pad_id5_PlantObject_703798951448450330:
+					return Lily__char_32_Pad_id5_PlantObject_703798951448450330.Deserialize(inProtocolStream);
+				case InternalLily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200:
+					return Lily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200.Deserialize(inProtocolStream);
+				case InternalLily__char_32_Pad_id5_Health_7105588657738653232:
+					return Lily__char_32_Pad_id5_Health_7105588657738653232.Deserialize(inProtocolStream);
+				case InternalLily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821:
+					return Lily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821.Deserialize(inProtocolStream);
+				case InternalLily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280:
+					return Lily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280.Deserialize(inProtocolStream);
+				case InternalPlant_id6_PlantObject_4428920011090734227:
+					return Plant_id6_PlantObject_4428920011090734227.Deserialize(inProtocolStream);
+				case InternalPlant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224:
+					return Plant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224.Deserialize(inProtocolStream);
+				case InternalPlant_id6_Health_1395163340710080267:
+					return Plant_id6_Health_1395163340710080267.Deserialize(inProtocolStream);
+				case InternalPlant_id6_UnityEngine__char_46_Transform_4428920010626887975:
+					return Plant_id6_UnityEngine__char_46_Transform_4428920010626887975.Deserialize(inProtocolStream);
+				case InternalPlant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974:
+					return Plant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974.Deserialize(inProtocolStream);
+				case InternalVenus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192:
+					return Venus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192.Deserialize(inProtocolStream);
+				case InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351:
+					return Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351.Deserialize(inProtocolStream);
+				case InternalVenus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369:
+					return Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369.Deserialize(inProtocolStream);
+				case InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718:
+					return Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718.Deserialize(inProtocolStream);
+				case InternalSpores_id8_PlantObject_5444483082972953170:
+					return Spores_id8_PlantObject_5444483082972953170.Deserialize(inProtocolStream);
+				case InternalSpores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649:
+					return Spores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649.Deserialize(inProtocolStream);
+				case InternalSpores_id8_Health_1977754536731014931:
+					return Spores_id8_Health_1977754536731014931.Deserialize(inProtocolStream);
+				case InternalSpores_id8_UnityEngine__char_46_Transform_5188060417753529539:
+					return Spores_id8_UnityEngine__char_46_Transform_5188060417753529539.Deserialize(inProtocolStream);
+				case InternalSpores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351:
+					return Spores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351.Deserialize(inProtocolStream);
+				case InternalRoots_id9_PlantObject_4095048946780906312:
+					return Roots_id9_PlantObject_4095048946780906312.Deserialize(inProtocolStream);
+				case InternalRoots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054:
+					return Roots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054.Deserialize(inProtocolStream);
+				case InternalRoots_id9_Health_1707105239468578422:
+					return Roots_id9_Health_1707105239468578422.Deserialize(inProtocolStream);
+				case InternalRoots_id9_UnityEngine__char_46_Transform_1568436447820697733:
+					return Roots_id9_UnityEngine__char_46_Transform_1568436447820697733.Deserialize(inProtocolStream);
+				case InternalRoots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324:
+					return Roots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324.Deserialize(inProtocolStream);
 				case InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0:
 					return WorldPosition.DeserializeArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldPosition_LOD0(inProtocolStream);
 				case InternalArchetypeDefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e_WorldOrientation_LOD0:
@@ -558,6 +745,92 @@ namespace Coherence.Generated
 					return Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_UnityEngine__char_46_AI__char_46_NavMeshAgent_5713996564709775321_LOD0(inProtocolStream);
 				case InternalArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_Health_6674255513578300028_LOD0:
 					return Enemy_id3_Health_6674255513578300028.DeserializeArchetypeEnemy_8e3461cf8d4e4834688cfb7eaef98857_Enemy_id3_Health_6674255513578300028_LOD0(inProtocolStream);
+				case InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldPosition_LOD0:
+					return WorldPosition.DeserializeArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldPosition_LOD0(inProtocolStream);
+				case InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldOrientation_LOD0:
+					return WorldOrientation.DeserializeArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_WorldOrientation_LOD0(inProtocolStream);
+				case InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_GenericScale_LOD0:
+					return GenericScale.DeserializeArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_GenericScale_LOD0(inProtocolStream);
+				case InternalArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_First__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986_LOD0:
+					return First__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986.DeserializeArchetypeFirst__char_32_Person__char_32_Player_5b66f4ea00578924390ab3ef8489d129_First__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986_LOD0(inProtocolStream);
+				case InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_WorldPosition_LOD0:
+					return WorldPosition.DeserializeArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_WorldPosition_LOD0(inProtocolStream);
+				case InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_WorldOrientation_LOD0:
+					return WorldOrientation.DeserializeArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_WorldOrientation_LOD0(inProtocolStream);
+				case InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_GenericScale_LOD0:
+					return GenericScale.DeserializeArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_GenericScale_LOD0(inProtocolStream);
+				case InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_PlantObject_703798951448450330_LOD0:
+					return Lily__char_32_Pad_id5_PlantObject_703798951448450330.DeserializeArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_PlantObject_703798951448450330_LOD0(inProtocolStream);
+				case InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200_LOD0:
+					return Lily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200.DeserializeArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200_LOD0(inProtocolStream);
+				case InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_Health_7105588657738653232_LOD0:
+					return Lily__char_32_Pad_id5_Health_7105588657738653232.DeserializeArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_Health_7105588657738653232_LOD0(inProtocolStream);
+				case InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821_LOD0:
+					return Lily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821.DeserializeArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821_LOD0(inProtocolStream);
+				case InternalArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280_LOD0:
+					return Lily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280.DeserializeArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280_LOD0(inProtocolStream);
+				case InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_WorldPosition_LOD0:
+					return WorldPosition.DeserializeArchetypePlant_d765de643a6a3a84481a9718beb599b3_WorldPosition_LOD0(inProtocolStream);
+				case InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_WorldOrientation_LOD0:
+					return WorldOrientation.DeserializeArchetypePlant_d765de643a6a3a84481a9718beb599b3_WorldOrientation_LOD0(inProtocolStream);
+				case InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_GenericScale_LOD0:
+					return GenericScale.DeserializeArchetypePlant_d765de643a6a3a84481a9718beb599b3_GenericScale_LOD0(inProtocolStream);
+				case InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_PlantObject_4428920011090734227_LOD0:
+					return Plant_id6_PlantObject_4428920011090734227.DeserializeArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_PlantObject_4428920011090734227_LOD0(inProtocolStream);
+				case InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224_LOD0:
+					return Plant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224.DeserializeArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224_LOD0(inProtocolStream);
+				case InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_Health_1395163340710080267_LOD0:
+					return Plant_id6_Health_1395163340710080267.DeserializeArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_Health_1395163340710080267_LOD0(inProtocolStream);
+				case InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_Transform_4428920010626887975_LOD0:
+					return Plant_id6_UnityEngine__char_46_Transform_4428920010626887975.DeserializeArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_Transform_4428920010626887975_LOD0(inProtocolStream);
+				case InternalArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974_LOD0:
+					return Plant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974.DeserializeArchetypePlant_d765de643a6a3a84481a9718beb599b3_Plant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974_LOD0(inProtocolStream);
+				case InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_WorldPosition_LOD0:
+					return WorldPosition.DeserializeArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_WorldPosition_LOD0(inProtocolStream);
+				case InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_GenericScale_LOD0:
+					return GenericScale.DeserializeArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_GenericScale_LOD0(inProtocolStream);
+				case InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_WorldOrientation_LOD0:
+					return WorldOrientation.DeserializeArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_WorldOrientation_LOD0(inProtocolStream);
+				case InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192_LOD0:
+					return Venus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192.DeserializeArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192_LOD0(inProtocolStream);
+				case InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351_LOD0:
+					return Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351.DeserializeArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351_LOD0(inProtocolStream);
+				case InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369_LOD0:
+					return Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369.DeserializeArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369_LOD0(inProtocolStream);
+				case InternalArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_LOD0:
+					return Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718.DeserializeArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_LOD0(inProtocolStream);
+				case InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_WorldPosition_LOD0:
+					return WorldPosition.DeserializeArchetypeSpores_200a876feaaaf244589706ac69e6dc16_WorldPosition_LOD0(inProtocolStream);
+				case InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_WorldOrientation_LOD0:
+					return WorldOrientation.DeserializeArchetypeSpores_200a876feaaaf244589706ac69e6dc16_WorldOrientation_LOD0(inProtocolStream);
+				case InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_GenericScale_LOD0:
+					return GenericScale.DeserializeArchetypeSpores_200a876feaaaf244589706ac69e6dc16_GenericScale_LOD0(inProtocolStream);
+				case InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_PlantObject_5444483082972953170_LOD0:
+					return Spores_id8_PlantObject_5444483082972953170.DeserializeArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_PlantObject_5444483082972953170_LOD0(inProtocolStream);
+				case InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649_LOD0:
+					return Spores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649.DeserializeArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649_LOD0(inProtocolStream);
+				case InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_Health_1977754536731014931_LOD0:
+					return Spores_id8_Health_1977754536731014931.DeserializeArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_Health_1977754536731014931_LOD0(inProtocolStream);
+				case InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_Transform_5188060417753529539_LOD0:
+					return Spores_id8_UnityEngine__char_46_Transform_5188060417753529539.DeserializeArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_Transform_5188060417753529539_LOD0(inProtocolStream);
+				case InternalArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351_LOD0:
+					return Spores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351.DeserializeArchetypeSpores_200a876feaaaf244589706ac69e6dc16_Spores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351_LOD0(inProtocolStream);
+				case InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_WorldPosition_LOD0:
+					return WorldPosition.DeserializeArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_WorldPosition_LOD0(inProtocolStream);
+				case InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_WorldOrientation_LOD0:
+					return WorldOrientation.DeserializeArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_WorldOrientation_LOD0(inProtocolStream);
+				case InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_GenericScale_LOD0:
+					return GenericScale.DeserializeArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_GenericScale_LOD0(inProtocolStream);
+				case InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_PlantObject_4095048946780906312_LOD0:
+					return Roots_id9_PlantObject_4095048946780906312.DeserializeArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_PlantObject_4095048946780906312_LOD0(inProtocolStream);
+				case InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054_LOD0:
+					return Roots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054.DeserializeArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054_LOD0(inProtocolStream);
+				case InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_Health_1707105239468578422_LOD0:
+					return Roots_id9_Health_1707105239468578422.DeserializeArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_Health_1707105239468578422_LOD0(inProtocolStream);
+				case InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_Transform_1568436447820697733_LOD0:
+					return Roots_id9_UnityEngine__char_46_Transform_1568436447820697733.DeserializeArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_Transform_1568436447820697733_LOD0(inProtocolStream);
+				case InternalArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324_LOD0:
+					return Roots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324.DeserializeArchetypeRoots_4e2bbc787b16997458ad85cd28b6e92d_Roots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324_LOD0(inProtocolStream);
 				default:
 					return (null, 0, 0);
 			}
@@ -895,6 +1168,81 @@ namespace Coherence.Generated
 				case InternalEnemy_id3_Health_6674255513578300028:
 					Enemy_id3_Health_6674255513578300028.Serialize((Enemy_id3_Health_6674255513578300028)data, mask, protocolStream);
 					break;
+				case InternalFirst__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986:
+					First__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986.Serialize((First__char_32_Person__char_32_Player_id4_UnityEngine__char_46_Transform_7842236257865821986)data, mask, protocolStream);
+					break;
+				case InternalLily__char_32_Pad_id5_PlantObject_703798951448450330:
+					Lily__char_32_Pad_id5_PlantObject_703798951448450330.Serialize((Lily__char_32_Pad_id5_PlantObject_703798951448450330)data, mask, protocolStream);
+					break;
+				case InternalLily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200:
+					Lily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200.Serialize((Lily__char_32_Pad_id5_UnityEngine__char_46_BoxCollider_7574956677122350200)data, mask, protocolStream);
+					break;
+				case InternalLily__char_32_Pad_id5_Health_7105588657738653232:
+					Lily__char_32_Pad_id5_Health_7105588657738653232.Serialize((Lily__char_32_Pad_id5_Health_7105588657738653232)data, mask, protocolStream);
+					break;
+				case InternalLily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821:
+					Lily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821.Serialize((Lily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821)data, mask, protocolStream);
+					break;
+				case InternalLily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280:
+					Lily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280.Serialize((Lily__char_32_Pad_id5_UnityEngine__char_46_SpriteRenderer_7190805722808687280)data, mask, protocolStream);
+					break;
+				case InternalPlant_id6_PlantObject_4428920011090734227:
+					Plant_id6_PlantObject_4428920011090734227.Serialize((Plant_id6_PlantObject_4428920011090734227)data, mask, protocolStream);
+					break;
+				case InternalPlant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224:
+					Plant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224.Serialize((Plant_id6_UnityEngine__char_46_BoxCollider_4428920011090734224)data, mask, protocolStream);
+					break;
+				case InternalPlant_id6_Health_1395163340710080267:
+					Plant_id6_Health_1395163340710080267.Serialize((Plant_id6_Health_1395163340710080267)data, mask, protocolStream);
+					break;
+				case InternalPlant_id6_UnityEngine__char_46_Transform_4428920010626887975:
+					Plant_id6_UnityEngine__char_46_Transform_4428920010626887975.Serialize((Plant_id6_UnityEngine__char_46_Transform_4428920010626887975)data, mask, protocolStream);
+					break;
+				case InternalPlant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974:
+					Plant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974.Serialize((Plant_id6_UnityEngine__char_46_SpriteRenderer_4428920010626887974)data, mask, protocolStream);
+					break;
+				case InternalVenus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192:
+					Venus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192.Serialize((Venus__char_32_Fly__char_32_Trap_id7_PlantObject_7691798621651576192)data, mask, protocolStream);
+					break;
+				case InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351:
+					Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351.Serialize((Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_BoxCollider_2468586318803779351)data, mask, protocolStream);
+					break;
+				case InternalVenus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369:
+					Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369.Serialize((Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369)data, mask, protocolStream);
+					break;
+				case InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718:
+					Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718.Serialize((Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718)data, mask, protocolStream);
+					break;
+				case InternalSpores_id8_PlantObject_5444483082972953170:
+					Spores_id8_PlantObject_5444483082972953170.Serialize((Spores_id8_PlantObject_5444483082972953170)data, mask, protocolStream);
+					break;
+				case InternalSpores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649:
+					Spores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649.Serialize((Spores_id8_UnityEngine__char_46_BoxCollider_6244277848610630649)data, mask, protocolStream);
+					break;
+				case InternalSpores_id8_Health_1977754536731014931:
+					Spores_id8_Health_1977754536731014931.Serialize((Spores_id8_Health_1977754536731014931)data, mask, protocolStream);
+					break;
+				case InternalSpores_id8_UnityEngine__char_46_Transform_5188060417753529539:
+					Spores_id8_UnityEngine__char_46_Transform_5188060417753529539.Serialize((Spores_id8_UnityEngine__char_46_Transform_5188060417753529539)data, mask, protocolStream);
+					break;
+				case InternalSpores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351:
+					Spores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351.Serialize((Spores_id8_UnityEngine__char_46_SpriteRenderer_5750176937178998351)data, mask, protocolStream);
+					break;
+				case InternalRoots_id9_PlantObject_4095048946780906312:
+					Roots_id9_PlantObject_4095048946780906312.Serialize((Roots_id9_PlantObject_4095048946780906312)data, mask, protocolStream);
+					break;
+				case InternalRoots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054:
+					Roots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054.Serialize((Roots_id9_UnityEngine__char_46_BoxCollider_1309972150818594054)data, mask, protocolStream);
+					break;
+				case InternalRoots_id9_Health_1707105239468578422:
+					Roots_id9_Health_1707105239468578422.Serialize((Roots_id9_Health_1707105239468578422)data, mask, protocolStream);
+					break;
+				case InternalRoots_id9_UnityEngine__char_46_Transform_1568436447820697733:
+					Roots_id9_UnityEngine__char_46_Transform_1568436447820697733.Serialize((Roots_id9_UnityEngine__char_46_Transform_1568436447820697733)data, mask, protocolStream);
+					break;
+				case InternalRoots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324:
+					Roots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324.Serialize((Roots_id9_UnityEngine__char_46_SpriteRenderer_4894113992013662324)data, mask, protocolStream);
+					break;
 			}
 		}
 
@@ -925,6 +1273,8 @@ namespace Coherence.Generated
 		{
 			switch (inputType)
 			{
+				case Definition.InternalFirst__char_32_Person__char_32_Player:
+					return First__char_32_Person__char_32_Player.Deserialize(bitStream);
 				default:
 					break;
 			}
@@ -1005,6 +1355,9 @@ namespace Coherence.Generated
 
 			switch (inputType)
 			{
+				case Definition.InternalFirst__char_32_Person__char_32_Player:
+					First__char_32_Person__char_32_Player.Serialize((First__char_32_Person__char_32_Player)inputData.Input, bitStream);
+					break;
 				default:
 					break;
 			}
