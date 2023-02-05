@@ -61,6 +61,7 @@ public class Health : MonoBehaviour, IDamageable
 
     public void Kill()
     {
+        AISpawner.instance.CharacterKilled();
         Destroy(gameObject);
     }
 

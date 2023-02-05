@@ -20,8 +20,7 @@ public class Plant : ScriptableObject
     public int damage;
     public int healing;
     public float confusion;
-    public bool slow;
-    public bool stun;
+    public int openWater, marshWater, waterWater;
     public float tickTime = 1f;
     public int maxTargets = 1;
     public LayerMask targetLayers;

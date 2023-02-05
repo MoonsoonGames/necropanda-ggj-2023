@@ -12,6 +12,7 @@ public class PlantObject : MonoBehaviour
     SpriteRenderer spriteRenderer;
     float radius;
     Plant plant;
+    E_Surfaces originalSurface;
 
     public void Setup(Plant plant, GridSpace space)
     {
@@ -31,6 +32,8 @@ public class PlantObject : MonoBehaviour
 
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         spriteRenderer.sprite = plant.sprite;
+
+        originalSurface = space.baseSurface;
 
         InvokeRepeating("Tick", plant.tickTime, plant.tickTime);
     }
@@ -86,6 +89,23 @@ public class PlantObject : MonoBehaviour
                 }
             }
         }
+
+        int water = 0;
+
+        switch (originalSurface)
+        {
+            case E_Surfaces.Open:
+                water = plant.openWater;
+                break;
+            case E_Surfaces.Marsh:
+                water = plant.marshWater;
+                break;
+            case E_Surfaces.Water:
+                water = plant.waterWater;
+                break;
+        }
+
+        //add water to managers
     }
 
     private void OnTriggerEnter(Collider other)

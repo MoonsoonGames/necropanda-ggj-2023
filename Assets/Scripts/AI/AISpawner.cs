@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AISpawner : MonoBehaviour
 {
     public static AISpawner instance;
+    MainHUDHandler mainHUDHandler;
 
     private void Start()
     {
         instance = this;
-
+        mainHUDHandler = GameObject.FindObjectOfType<MainHUDHandler>();
         //Invoke("SpawnNextWave", 15);
     }
 
@@ -29,13 +31,21 @@ public class AISpawner : MonoBehaviour
     };
     private int currentWave = 0;
 
-    public void EnemyKilled()
+    public void CharacterKilled()
     {
+        GameObject[] defences = GameObject.FindGameObjectsWithTag("DefencePoint");
+
+        Debug.Log(defences.Length);
+        if (defences.Length <= 1)
+        {
+            LoseGame(); 
+        }
+
         Enemy[] enemies = GameObject.FindObjectsOfType<Enemy>();
 
-        if (enemies.Length <= 0)
+        if (enemies.Length <= 1)
         {
-            //open up shop menu
+            mainHUDHandler.ShopBTN();
         }
     }
 
@@ -70,6 +80,14 @@ public class AISpawner : MonoBehaviour
     {
         //disconnect omline thingy
         //return to main scfrn
+        SceneManager.LoadScene("WinGame");
+    }
+
+    void LoseGame()
+    {
+        //disconnect omline thingy
+        //return to main scfrn
+        SceneManager.LoadScene("LoseGame");
     }
 }
 
