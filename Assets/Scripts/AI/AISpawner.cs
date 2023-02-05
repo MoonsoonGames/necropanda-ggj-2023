@@ -4,40 +4,66 @@ using UnityEngine;
 
 public class AISpawner : MonoBehaviour
 {
+    public static AISpawner instance;
+
+    private void Start()
+    {
+        instance = this;
+
+        Invoke("SpawnNextWave", 15);
+    }
+
     public GameObject enemyPrefab;
     public float spawnDelay = 1f;
     public Wave[] waves = new Wave[]
     {
-        new Wave(5, 5f),
-        new Wave(10, 7f),
-        new Wave(15, 10f),
-        new Wave (20, 15f),
-        new Wave(25, 20f),
-        new Wave(30, 25f),
-        new Wave(37, 35f),
-        new Wave (40, 45f),
-        new Wave (50, 60f)
+        new Wave(5),
+        new Wave(10),
+        new Wave(15),
+        new Wave (20),
+        new Wave(25),
+        new Wave(30),
+        new Wave(37),
+        new Wave (40),
+        new Wave (50)
     };
     private int currentWave = 0;
-    private float spawnTimer = 0f;
 
-    private void Update()
+    public void EnemyKilled()
+    {
+        Enemy[] enemies = GameObject.FindObjectsOfType<Enemy>();
+
+        if (enemies.Length <= 0)
+        {
+            //open up shop menu
+        }
+    }
+
+    public void ShopClosed()
+    {
+        Invoke("SpawnNextWave", 15);
+    }
+
+    [ContextMenu("Spawn next wave")]
+    void SpawnNextWave()
     {
         if (currentWave >= waves.Length)
         {
+            //win game
             return;
         }
 
-        spawnTimer += Time.deltaTime;
-        if (spawnTimer >= waves[currentWave].spawnTime)
+        for (int i = 0; i < waves[currentWave].enemyCount; i++)
         {
-            for (int i = 0; i < waves[currentWave].enemyCount; i++)
-            {
-                Instantiate(enemyPrefab, transform.position, transform.rotation);
-                spawnTimer = 0f;
-            }
-            currentWave++;
+            Invoke("SpawnEnemy", i * spawnDelay);
         }
+
+        currentWave++;
+    }
+
+    void SpawnEnemy()
+    {
+        Instantiate(enemyPrefab, transform.position, transform.rotation);
     }
 }
 
@@ -46,11 +72,9 @@ public class AISpawner : MonoBehaviour
 public class Wave
 {
     public int enemyCount;
-    public float spawnTime;
 
-    public Wave(int enemyCount, float spawnTime)
+    public Wave(int enemyCount)
     {
         this.enemyCount = enemyCount;
-        this.spawnTime = spawnTime;
     }
 }
