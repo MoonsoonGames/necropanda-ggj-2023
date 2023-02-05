@@ -20,6 +20,7 @@ namespace Coherence.Generated
 		public const int Venus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57Index = 7;
 		public const int Spores_200a876feaaaf244589706ac69e6dc16Index = 8;
 		public const int Roots_4e2bbc787b16997458ad85cd28b6e92dIndex = 9;
+		public const int EnemyGroup_dc358293f079f194ab5ec7d1d043818fIndex = 10;
 
 		public static Dictionary<string, int> IndexForName = new Dictionary<string, int>() {
 			{ "DefencePoint_e2ce5010b5b9e6e4dbcc44fba32a7f6e", 0 },
@@ -41,6 +42,8 @@ namespace Coherence.Generated
 			{ "Spores_200a876feaaaf244589706ac69e6dc16", 8 },
 
 			{ "Roots_4e2bbc787b16997458ad85cd28b6e92d", 9 },
+
+			{ "EnemyGroup_dc358293f079f194ab5ec7d1d043818f", 10 },
 
 		};
 	}

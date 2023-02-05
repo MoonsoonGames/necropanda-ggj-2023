@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 7105588657738653232}
   - component: {fileID: 3184809926766531619}
   - component: {fileID: -6949745930980599911}
+  - component: {fileID: 7832088778757989168}
   m_Layer: 6
   m_Name: Lily Pad
   m_TagString: Plant
@@ -1070,6 +1071,25 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
+--- !u!114 &7832088778757989168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5012324765489283674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc97a814921d461188a38ca20db6787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialBufferSize: 32
+  InitialBufferDelay: 3
+  DisconnectOnTimeReset: 0
+  DestroyOnInputAuthorityDisconnected: 1
+  UseFixedSimulationFrames: 0
+  inputName: Lily Pad
+  fields: []
 --- !u!1 &5929554271168548564
 GameObject:
   m_ObjectHideFlags: 0

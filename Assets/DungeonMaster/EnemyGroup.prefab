@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7746639711765510623}
   - component: {fileID: 6055110526863408169}
+  - component: {fileID: -1159919204987414044}
   m_Layer: 0
   m_Name: EnemyGroup
   m_TagString: Untagged
@@ -361,7 +362,7 @@ MonoBehaviour:
     archetypeName: EnemyGroup_dc358293f079f194ab5ec7d1d043818f
     GeneratesArchetypeDefinition: 0
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncEnemyGroup, Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncEnemyGroup_id10, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 2
@@ -5771,6 +5772,25 @@ MonoBehaviour:
         coherenceSync: {fileID: 0}
         interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5,
           type: 2}
+--- !u!114 &-1159919204987414044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212339928808242800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc97a814921d461188a38ca20db6787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialBufferSize: 32
+  InitialBufferDelay: 3
+  DisconnectOnTimeReset: 0
+  DestroyOnInputAuthorityDisconnected: 1
+  UseFixedSimulationFrames: 0
+  inputName: EnemyGroup
+  fields: []
 --- !u!1001 &615328697461068332
 PrefabInstance:
   m_ObjectHideFlags: 0

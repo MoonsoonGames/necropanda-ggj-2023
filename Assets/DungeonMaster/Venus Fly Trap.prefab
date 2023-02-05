@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1802279656568455369}
   - component: {fileID: 5236977006828174418}
   - component: {fileID: -3313199994074274407}
+  - component: {fileID: -6543026132404714592}
   m_Layer: 6
   m_Name: Venus Fly Trap
   m_TagString: Plant
@@ -197,7 +198,7 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Venus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
   bakedScriptType: Coherence.Generated.CoherenceSyncVenus__char_32_Fly__char_32_Trap_id7,
     Assembly-CSharp
@@ -643,6 +644,25 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
+--- !u!114 &-6543026132404714592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296660936466997344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc97a814921d461188a38ca20db6787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialBufferSize: 32
+  InitialBufferDelay: 3
+  DisconnectOnTimeReset: 0
+  DestroyOnInputAuthorityDisconnected: 1
+  UseFixedSimulationFrames: 0
+  inputName: Venus Fly Trap
+  fields: []
 --- !u!1 &1294489088620100762
 GameObject:
   m_ObjectHideFlags: 0

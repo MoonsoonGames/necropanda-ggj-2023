@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 5606459228669450788}
   - component: {fileID: 3866449135772655081}
   - component: {fileID: -3788426323188766410}
+  - component: {fileID: -8520989316474826309}
   m_Layer: 6
   m_Name: Roots
   m_TagString: Plant
@@ -329,7 +330,7 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Roots_4e2bbc787b16997458ad85cd28b6e92d
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
   bakedScriptType: Coherence.Generated.CoherenceSyncRoots_id9, Assembly-CSharp
   approveAuthorityTransferRequests: 1
@@ -866,6 +867,25 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
+--- !u!114 &-8520989316474826309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2542381669670149621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc97a814921d461188a38ca20db6787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialBufferSize: 32
+  InitialBufferDelay: 3
+  DisconnectOnTimeReset: 0
+  DestroyOnInputAuthorityDisconnected: 1
+  UseFixedSimulationFrames: 0
+  inputName: Roots
+  fields: []
 --- !u!1 &2991524987533817798
 GameObject:
   m_ObjectHideFlags: 0
