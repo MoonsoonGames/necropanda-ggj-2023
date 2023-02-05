@@ -14,7 +14,7 @@ public class PlantMenu : MonoBehaviour
     public void SetupMenu(Plant plant)
     {
         this.plant = plant;
-        text.text = plant.plantName;
+        text.text = plant.plantName  + "( x " + plant.numberOfPlants + ")";
         image.sprite = plant.sprite;
     }
 
