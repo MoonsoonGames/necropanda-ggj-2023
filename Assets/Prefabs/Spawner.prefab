@@ -189,6 +189,8 @@ MonoBehaviour:
   - rid: 3815125139126747216
   - rid: 3815125139126747218
   - rid: 3815125139126747222
+  - rid: 3815125154782773754
+  - rid: 3815125154782773756
   onNetworkedInstantiation:
     m_PersistentCalls:
       m_Calls: []
@@ -203,8 +205,7 @@ MonoBehaviour:
   selectedSynchronizedPrefabOption: 2
   usingReflection: 0
   coherenceTag: 
-  componentActions:
-  - rid: 3815125139126747224
+  componentActions: []
   references:
     version: 2
     RefIds:
@@ -496,8 +497,92 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
-    - rid: 3815125139126747224
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions,
+    - rid: 3815125154782773754
+      type: {class: Vector2Binding, ns: Coherence.Toolkit.Bindings.ValueBindings,
         asm: Coherence.Toolkit}
       data:
-        component: {fileID: 2011534467780421880}
+        descriptor:
+          rid: 3815125154782773755
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: 75e35e40-2d57-4674-ad17-023abb4e5e36
+        archetypeData:
+          type: 6
+          minRange: 0
+          maxRange: 0
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 6
+            bits: 32
+            minRange: 0
+            maxRange: 0
+            precision: 0.001
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 2011534467780421881}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5,
+          type: 2}
+    - rid: 3815125154782773755
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: size
+        monoAssemblyType: UnityEngine.Vector2, UnityEngine
+        required: 0
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 16
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: UnityEngine.SpriteRenderer, UnityEngine.CoreModule,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.ValueBindings.Vector2Binding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
+    - rid: 3815125154782773756
+      type: {class: CommandBinding, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 3815125154782773757
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: 405d0a8b-c3f8-44f9-b6c2-0b2fff12fe17
+        archetypeData:
+          type: 0
+          minRange: 0
+          maxRange: 0
+          sampleRate: 0
+          floatCompression: 0
+          fields: []
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 2011534467780421880}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5,
+          type: 2}
+    - rid: 3815125154782773757
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: SpawnNextWave
+        monoAssemblyType: 
+        required: 0
+        enforcesLODingWhenFieldsOverriden: 0
+        valueSyncCallbackName: 
+        memberType: 8
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: AISpawner, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.CommandBinding, Coherence.Toolkit,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []

@@ -19,7 +19,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 1671e581348575546bac21f34e37f33b, type: 3}
   buildSurfaces: 00000000
   numberOfPlants: 0
-  waterCost: 50
+  waterCost: 25
   surfaceModifier: 1
   radius: 11
   damage: 0

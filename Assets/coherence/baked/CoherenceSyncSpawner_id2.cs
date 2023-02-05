@@ -22,6 +22,43 @@ namespace Coherence.Generated
 	using Logger = Coherence.Log.Logger;
 	using UnityEngine.Scripting;
 
+	public class Binding_4c242586da6a31949973a28c5fabc675_75e35e40_2d57_4674_ad17_023abb4e5e36 : Vector2Binding
+	{
+		private UnityEngine.SpriteRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.SpriteRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Spawner_id2_UnityEngine__char_46_SpriteRenderer_2011534467780421881";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override Vector2 Value
+		{
+			get => (Vector2)(UnityEngine.Vector2)(CastedUnityComponent.size);
+			set => CastedUnityComponent.size = (UnityEngine.Vector2)(value);
+		}
+
+		protected override Vector2 ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Spawner_id2_UnityEngine__char_46_SpriteRenderer_2011534467780421881)coherenceComponent;
+			return update.size;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Spawner_id2_UnityEngine__char_46_SpriteRenderer_2011534467780421881)coherenceComponent;
+			update.size = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Spawner_id2_UnityEngine__char_46_SpriteRenderer_2011534467780421881();
+		}
+	}
+
 	public class Binding_4c242586da6a31949973a28c5fabc675_69989bad_83c1_41cb_b613_b26e342fb6e4 : ReferenceBinding
 	{
 		private AISpawner CastedUnityComponent;		
@@ -142,7 +179,8 @@ namespace Coherence.Generated
 		private CoherenceSync coherenceSync;
 		private Logger logger;
 
-		// Cached targets for commands
+		// Cached targets for commands		
+		private AISpawner Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17_CommandTarget;
 
 		private IClient client;
 		private CoherenceMonoBridge monoBridge => coherenceSync.MonoBridge;
@@ -153,6 +191,26 @@ namespace Coherence.Generated
 			coherenceSync.usingReflection = false;
 
 			logger = coherenceSync.logger.With<CoherenceSyncSpawner_id2>();
+			if (coherenceSync.TryGetBindingByGuid("405d0a8b-c3f8-44f9-b6c2-0b2fff12fe17", "SpawnNextWave", out Binding Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17))
+			{
+				Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17_CommandTarget = (AISpawner)Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17.UnityComponent;
+				coherenceSync.AddCommandRequestDelegate("AISpawner.SpawnNextWave", "()",
+				SendCommand_Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17, ReceiveLocalCommand_Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17, MessageTarget.AuthorityOnly, Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17_CommandTarget,false);
+			}
+			else
+			{
+				logger.Error("Couldn't find command binding (SpawnNextWave)");
+			}
+			if (coherenceSync.TryGetBindingByGuid("75e35e40-2d57-4674-ad17-023abb4e5e36", "size", out Binding InternalSpawner_id2_UnityEngine__char_46_SpriteRenderer_2011534467780421881_Spawner_id2_UnityEngine__char_46_SpriteRenderer_2011534467780421881_size))
+			{
+				var clone = new Binding_4c242586da6a31949973a28c5fabc675_75e35e40_2d57_4674_ad17_023abb4e5e36();
+				InternalSpawner_id2_UnityEngine__char_46_SpriteRenderer_2011534467780421881_Spawner_id2_UnityEngine__char_46_SpriteRenderer_2011534467780421881_size.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalSpawner_id2_UnityEngine__char_46_SpriteRenderer_2011534467780421881_Spawner_id2_UnityEngine__char_46_SpriteRenderer_2011534467780421881_size)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.SpriteRenderer).size");
+			}
 			if (coherenceSync.TryGetBindingByGuid("69989bad-83c1-41cb-b613-b26e342fb6e4", "enemyPrefab", out Binding InternalSpawner_id2_AISpawner_2011534467780421880_Spawner_id2_AISpawner_2011534467780421880_enemyPrefab))
 			{
 				var clone = new Binding_4c242586da6a31949973a28c5fabc675_69989bad_83c1_41cb_b613_b26e342fb6e4();
@@ -215,11 +273,31 @@ namespace Coherence.Generated
 			}
 			this.client = client;
 		}
+		void SendCommand_Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17(MessageTarget target, object[] args)
+		{
+			var command = new Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17();
+			client.SendCommand(command, target, coherenceSync.EntityID);
+		}
+
+		void ReceiveLocalCommand_Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17(MessageTarget target, object[] args)
+		{
+			var command = new Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17();
+			ReceiveCommand_Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17(command);
+		}
+
+		void ReceiveCommand_Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17(Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17 command)
+		{
+			var target = Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17_CommandTarget;
+			target.SpawnNextWave();
+		}
 
 		public override void ReceiveCommand(IEntityCommand command)
 		{
 			switch(command)
 			{
+				case Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17 castedCommand:
+					ReceiveCommand_Spawner_id2_AISpawner__char_46_SpawnNextWave_405d0a8b_c3f8_44f9_b6c2_0b2fff12fe17(castedCommand);
+					break;
 				default:
 					logger.Warning($"[CoherenceSyncSpawner_id2] Unhandled command: {command.GetType()}.");
 					break;
