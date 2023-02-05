@@ -11,6 +11,8 @@ public class Plant : ScriptableObject
     public Sprite sprite;
     public List<E_Surfaces> buildSurfaces = new List<E_Surfaces>();
 
+    public int numberOfPlants = 0;
+
     public int waterCost = 1;
     public E_Surfaces surfaceModifier = E_Surfaces.Closed;
 
@@ -26,10 +28,13 @@ public class Plant : ScriptableObject
 
     public void SpawnPlant(GridSpace space)
     {
-        //check that the plant can be built on the specified surface
-        GameObject plant = Instantiate(plantObj, space.transform) as GameObject;
-        plant.transform.localPosition = new Vector3(0, 0.1f, 0);
-        plant.GetComponent<PlantObject>().Setup(this, space);
+        if (numberOfPlants > 0)
+        {
+            //check that the plant can be built on the specified surface
+            GameObject plant = Instantiate(plantObj, space.transform) as GameObject;
+            plant.transform.localPosition = new Vector3(0, 0.1f, 0);
+            plant.GetComponent<PlantObject>().Setup(this, space);
+        }
     }
 }
 

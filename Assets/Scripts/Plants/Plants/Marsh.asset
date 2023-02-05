@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Marsh
   m_EditorClassIdentifier: 
   plantName: Marsh
-  plantObj: {fileID: 4428920011090734225, guid: d765de643a6a3a84481a9718beb599b3,
-    type: 3}
+  plantObj: {fileID: 488797146907502531, guid: fa5017dbfb5b6d342812fb8e67e8d2ed, type: 3}
   health: 180
   sprite: {fileID: 21300000, guid: 7962f1dc2406a484abc9237153dcc93a, type: 3}
   buildSurfaces: 00000000
