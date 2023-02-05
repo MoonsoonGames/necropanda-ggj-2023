@@ -11,11 +11,14 @@ public class NPC : MonoBehaviour
 
     public GameObject target;
 
+    public float agentSpeed;
+
     public virtual void SetupAI()
     {
         agent = this.GetComponent<NavMeshAgent>();
         FindTargets();
         SetDestination(transform.position);
+        agentSpeed = agent.speed;
     }
 
     /// <summary>
@@ -56,6 +59,7 @@ public enum AIState
 {
     Nothing,
     Targetting,
-    Attacking
+    Attacking,
+    Confused
 }
 
