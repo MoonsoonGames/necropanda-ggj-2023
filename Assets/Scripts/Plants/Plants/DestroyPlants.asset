@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: DestroyPlants
   m_EditorClassIdentifier: 
   plantName: Destroy Plants
-  plantObj: {fileID: 4428920011090734225, guid: d765de643a6a3a84481a9718beb599b3,
-    type: 3}
+  plantObj: {fileID: 0}
   health: 10
   sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   buildSurfaces: 0000000001000000020000000300000004000000
+  numberOfPlants: 2147483647
   waterCost: 1
   surfaceModifier: 4
   radius: 1
@@ -28,3 +28,6 @@ MonoBehaviour:
   stun: 0
   tickTime: 99999
   maxTargets: 0
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 0

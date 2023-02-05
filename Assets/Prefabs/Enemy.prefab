@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5713996564254599292}
   - component: {fileID: 5713996564254599293}
   - component: {fileID: 2799487912506319182}
+  - component: {fileID: 2303086681363906485}
   m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
@@ -25,14 +26,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5713996564254599291}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5713996564709775322}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5713996564254599293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -100,6 +101,23 @@ MonoBehaviour:
   lockX: 0
   lockY: 0
   lockZ: 0
+--- !u!114 &2303086681363906485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5713996564254599291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035ffaea4b3f4544bb02840221edb75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 3c5f5e58a9b9be647a980cb003360812, type: 3}
+  - {fileID: 21300000, guid: ffb959926cb6ca344ab85650e64a7f08, type: 3}
+  - {fileID: 21300000, guid: 41f9bbd0eb84c514989c1db172685c2d, type: 3}
+  - {fileID: 21300000, guid: 4bf6e7de7fd01564fb10bae26b6faf95, type: 3}
 --- !u!1 &5713996564709775303
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +194,7 @@ MonoBehaviour:
   target: {fileID: 0}
   damageAmount: 4
   attackTime: 5
-  range: 5
+  range: 2.71
 --- !u!114 &6674255513578300028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +284,8 @@ MonoBehaviour:
     - component: {fileID: 5713996564254599293}
       lodStepsActive: 1
     - component: {fileID: 2799487912506319182}
+      lodStepsActive: 1
+    - component: {fileID: 2303086681363906485}
       lodStepsActive: 1
     lodLevels:
     - distance: 0

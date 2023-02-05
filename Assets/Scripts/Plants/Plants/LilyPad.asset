@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: LilyPad
   m_EditorClassIdentifier: 
   plantName: Lily Pad
-  plantObj: {fileID: 4428920011090734225, guid: d765de643a6a3a84481a9718beb599b3,
+  plantObj: {fileID: 5012324765489283674, guid: e6b57ddcc936ef24db26545e3576fe23,
     type: 3}
   health: 40
   sprite: {fileID: 21300000, guid: 3f90ed6ff70dbb64bb074d96ccb0ceb1, type: 3}
   buildSurfaces: 02000000
+  numberOfPlants: 2
   waterCost: 1
   surfaceModifier: 0
   radius: 1
