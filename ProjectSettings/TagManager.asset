@@ -3,16 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DefencePoint
+  - Plant
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Grid Space
   - Water
   - UI
-  - 
-  - 
+  - Plant
+  - Enemy
   - 
   - 
   - 
@@ -40,4 +43,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Island
+    uniqueID: 249142633
+    locked: 0
+  - name: Water
+    uniqueID: 3859236893
+    locked: 0
+  - name: Player
+    uniqueID: 2217607419
     locked: 0

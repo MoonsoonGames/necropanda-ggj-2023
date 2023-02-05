@@ -6,6 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SCN_Sample.unity
-    guid: f2a1f8cadfae3ea4b86793d73cb5b102
-  m_configObjects: {}
+    path: Assets/Scenes/Splash Screen.unity
+    guid: 825e800803fa1cf4d841e43bd1a1a104
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: 2a42f10d04ac1d84fa448ea831002941
+  - enabled: 1
+    path: Assets/Scenes/GameSceneMultiplayer.unity
+    guid: c1cdb9cf49faced4eaef8cee770b7114
+  - enabled: 1
+    path: Assets/Scenes/LoseGame.unity
+    guid: cd67c85bf403eab4d95ae672ad2b9d5d
+  - enabled: 1
+    path: Assets/Scenes/WinGame.unity
+    guid: d575bf84119035b48ba712d71cf2c5f4
+  m_configObjects:
+    io.coherence.simulator.build.options: {fileID: 11400000, guid: f67f6f175163ca44ca05328fe3f02733,
+      type: 2}
