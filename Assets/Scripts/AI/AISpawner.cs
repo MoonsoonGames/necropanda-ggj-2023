@@ -49,7 +49,7 @@ public class AISpawner : MonoBehaviour
     {
         if (currentWave >= waves.Length)
         {
-            //win game
+            WinGame();
             return;
         }
 
@@ -64,6 +64,12 @@ public class AISpawner : MonoBehaviour
     void SpawnEnemy()
     {
         Instantiate(enemyPrefab, transform.position, transform.rotation);
+    }
+
+    void WinGame()
+    {
+        //disconnect omline thingy
+        //return to main scfrn
     }
 }
 
