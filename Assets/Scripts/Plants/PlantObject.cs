@@ -76,6 +76,12 @@ public class PlantObject : MonoBehaviour
                 {
                     Debug.Log(plant.plantName + " damaged " + item.name + " for " + plant.damage + " damage");
                     health.Damage(plant.damage);
+
+                    Enemy enemy = item.GetComponent<Enemy>();
+                    if (enemy != null && plant.confusion > 0)
+                    {
+                        enemy.Confuse(plant.confusion);
+                    }
                 }
             }
         }

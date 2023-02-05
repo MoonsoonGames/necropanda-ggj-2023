@@ -11,7 +11,8 @@ public class Enemy : NPC
     float currentTime = 5f;
     public float range = 5f;
 
-    public bool confused;
+    bool confused = false;
+    float confusedTime = 0;
 
     // Wander vars
     float wanderCooldown;
@@ -100,35 +101,40 @@ public class Enemy : NPC
                 {
                     base.SetAIState(AIState.Targetting);
                 }
-
-                // This will throw an error, basically there's a frame where unity still thinks that the target exists, this happens
-                // before we get chance to change the state, it only throws 1 error per AI, not hundreds
-                if (base.target.TryGetComponent(out IDamageable targetObject))
+                else
                 {
-                    if (currentTime >= attackTime)
+                    // This will throw an error, basically there's a frame where unity still thinks that the target exists, this happens
+                    // before we get chance to change the state, it only throws 1 error per AI, not hundreds
+                    if (base.target.TryGetComponent(out IDamageable targetObject))
                     {
-                        // damage
-                        targetObject.Damage(damageAmount);
-                        // If the target dies, go back to targetting
-                        if (targetObject == null)
+                        if (currentTime >= attackTime)
                         {
-                            base.SetAIState(AIState.Targetting);
+                            Debug.Log("Enemy attacked for " + damageAmount);
+                            // damage
+                            targetObject.Damage(damageAmount);
+                            // If the target dies, go back to targetting
+                            if (targetObject == null)
+                            {
+                                base.SetAIState(AIState.Targetting);
+                            }
+
+                            currentTime = 0;
+                        }
+                        else
+                        {
+                            currentTime += Time.deltaTime;
                         }
 
-                        currentTime = 0;
-                    }
-                    else
-                    {
-                        currentTime += Time.deltaTime;
-                    }
-
-                    // Confusion
-                    if (confused)
-                    {
-                        base.SetAIState(AIState.Confused);
+                        // Confusion
+                        if (confused)
+                        {
+                            base.SetAIState(AIState.Confused);
+                        }
                     }
                 }
+
                 break;
+
 
             case AIState.Confused:
                 WanderInRadius(blocked, hit);
@@ -254,5 +260,32 @@ public class Enemy : NPC
         base.SetAIState(AIState.Nothing);
     }
     #endregion
+
+    #region Confusion
+
+    public void Confuse(float time)
+    {
+        confused = true;
+        confusedTime += time;
+
+        InvokeRepeating("CheckConfusionTime", 0, 0.1f);
+    }
+
+    void CheckConfusionTime()
+    {
+        if (confusedTime > 0)
+        {
+            confusedTime -= Time.deltaTime;
+        }
+        else
+        {
+            CancelInvoke();
+            confused = false;
+            confusedTime = 0;
+        }
+    }
+
+    #endregion
+
     #endregion
 }

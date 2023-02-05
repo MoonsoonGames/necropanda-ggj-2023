@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 5713996564709775303, guid: 8e3461cf8d4e4834688cfb7eaef98857,
     type: 3}
-  spawnDelay: 0.2
+  spawnDelay: 1
   waves:
   - enemyCount: 5
     spawnTime: 5

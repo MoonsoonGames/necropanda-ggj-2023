@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour, IDamageable
 {
     public int maxHealth = 50;
     int currentHealth;
+    Slider slider; 
 
     private void Start()
     {
+        slider = GetComponentInChildren<Slider>();
         ResetHealth();
     }
 
@@ -16,6 +19,7 @@ public class Health : MonoBehaviour, IDamageable
     public void ResetHealth()
     {
         currentHealth = maxHealth;
+        AdjustSlider();
     }
 
     [ContextMenu("Damage(10)")]
@@ -31,6 +35,10 @@ public class Health : MonoBehaviour, IDamageable
         {
             Kill();
         }
+        else
+        {
+            AdjustSlider();
+        }
     }
 
     public void Heal(int healing)
@@ -39,6 +47,10 @@ public class Health : MonoBehaviour, IDamageable
         if (CheckKill())
         {
             Kill();
+        }
+        else
+        {
+            AdjustSlider();
         }
     }
 
@@ -50,5 +62,13 @@ public class Health : MonoBehaviour, IDamageable
     public void Kill()
     {
         Destroy(gameObject);
+    }
+
+    public void AdjustSlider()
+    {
+        if (slider == null) return;
+
+        slider.maxValue = maxHealth;
+        slider.value = currentHealth;
     }
 }
