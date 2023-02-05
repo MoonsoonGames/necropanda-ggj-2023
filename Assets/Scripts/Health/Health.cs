@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour, IDamageable
 {
     public int maxHealth = 50;
-    int currentHealth;
-    Slider slider; 
+    public int currentHealth;
+    Slider slider;
 
     private void Start()
     {

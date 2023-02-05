@@ -133,6 +133,43 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_4e2bbc787b16997458ad85cd28b6e92d_2ca25c80_f8c8_4984_afdf_bb8a36966040 : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Roots_id9_Health_1707105239468578422";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.currentHealth);
+			set => CastedUnityComponent.currentHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Roots_id9_Health_1707105239468578422)coherenceComponent;
+			return update.currentHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Roots_id9_Health_1707105239468578422)coherenceComponent;
+			update.currentHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Roots_id9_Health_1707105239468578422();
+		}
+	}
+
 	public class Binding_4e2bbc787b16997458ad85cd28b6e92d_8dd557e5_ac14_41a5_9c4a_97c7541d76c1 : DeepScaleBinding
 	{
 		private UnityEngine.Transform CastedUnityComponent;		
@@ -337,6 +374,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (Health).maxHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("2ca25c80-f8c8-4984-afdf-bb8a36966040", "currentHealth", out Binding InternalRoots_id9_Health_1707105239468578422_Roots_id9_Health_1707105239468578422_currentHealth))
+			{
+				var clone = new Binding_4e2bbc787b16997458ad85cd28b6e92d_2ca25c80_f8c8_4984_afdf_bb8a36966040();
+				InternalRoots_id9_Health_1707105239468578422_Roots_id9_Health_1707105239468578422_currentHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalRoots_id9_Health_1707105239468578422_Roots_id9_Health_1707105239468578422_currentHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).currentHealth");
 			}
 			if (coherenceSync.TryGetBindingByGuid("8dd557e5-ac14-41a5-9c4a-97c7541d76c1", "localScale", out Binding InternalRoots_id9_UnityEngine__char_46_Transform_1568436447820697733_Roots_id9_UnityEngine__char_46_Transform_1568436447820697733_localScale))
 			{

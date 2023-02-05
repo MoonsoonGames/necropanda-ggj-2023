@@ -19,10 +19,11 @@ namespace Coherence.Generated
 	{
 		public Vector3 position;
 		public Vector3 localScale;
+		public Quaternion rotation;
 
 		public override string ToString()
 		{
-			return $"Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718(position: {position}, localScale: {localScale})";
+			return $"Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718(position: {position}, localScale: {localScale}, rotation: {rotation})";
 		}
 
 		public uint GetComponentType() => Definition.InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718;
@@ -56,6 +57,12 @@ namespace Coherence.Generated
 				localScale = other.localScale;
 			}
 			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				rotation = other.rotation;
+			}
+			mask >>= 1;
 			return this;
 		}
 
@@ -69,6 +76,11 @@ namespace Coherence.Generated
 			if (bitStream.WriteMask((mask & 0x01) != 0))
 			{
 				bitStream.WriteVector3((data.localScale.ToCoreVector3()), FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteQuaternion((data.rotation.ToCoreQuaternion()), 32);
 			}
 			mask >>= 1;
 		}
@@ -88,6 +100,11 @@ namespace Coherence.Generated
 				val.localScale = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
 				mask |= 0b00000000000000000000000000000010;
 			}
+			if (bitStream.ReadMask())
+			{
+				val.rotation = (bitStream.ReadQuaternion(32)).ToUnityQuaternion();
+				mask |= 0b00000000000000000000000000000100;
+			}
 			return (val, mask, null);
 		}
 		public static (Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718, uint, uint?) DeserializeArchetypeVenus__char_32_Fly__char_32_Trap_cd0989dbe6b806a499067cd427b33d57_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_LOD0(InProtocolBitStream bitStream)
@@ -103,6 +120,11 @@ namespace Coherence.Generated
 			{
 				val.localScale = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
 				mask |= 0b00000000000000000000000000000010;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.rotation = (bitStream.ReadQuaternion(32)).ToUnityQuaternion();
+				mask |= 0b00000000000000000000000000000100;
 			}
 
 			return (val, mask, 0);

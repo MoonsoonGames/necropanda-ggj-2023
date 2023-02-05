@@ -947,6 +947,117 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_4329b449_8326_4a98_8f97_851284f6125e : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_859708723760784344";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.maxHealth);
+			set => CastedUnityComponent.maxHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_859708723760784344)coherenceComponent;
+			return update.maxHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_859708723760784344)coherenceComponent;
+			update.maxHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_859708723760784344();
+		}
+	}
+
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_1bb949d8_992b_4c46_ad59_385c4819137e : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_859708723760784344";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.currentHealth);
+			set => CastedUnityComponent.currentHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_859708723760784344)coherenceComponent;
+			return update.currentHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_859708723760784344)coherenceComponent;
+			update.currentHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_859708723760784344();
+		}
+	}
+
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_a0ab5a00_355c_4ba7_9624_e83189ca5d9f : BoolBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_859708723760784344";
+
+		public override uint FieldMask => 0b00000000000000000000000000000100;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.enabled);
+			set => CastedUnityComponent.enabled = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_859708723760784344)coherenceComponent;
+			return update.enabled;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_859708723760784344)coherenceComponent;
+			update.enabled = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_859708723760784344();
+		}
+	}
+
 	public class Binding_dc358293f079f194ab5ec7d1d043818f_fe77fe64_2802_4e82_99cb_ee1172e32a42 : DeepPositionBinding
 	{
 		private UnityEngine.Transform CastedUnityComponent;		
@@ -2017,6 +2128,117 @@ namespace Coherence.Generated
 		public override ICoherenceComponentData CreateComponentData()
 		{
 			return new EnemyGroup_id10_UnityEngine__char_46_AI__char_46_NavMeshAgent_5171864830211081717();
+		}
+	}
+
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_1a0cad45_804c_4e24_8dc7_d5b0a1e92025 : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_6058940427413991504";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.maxHealth);
+			set => CastedUnityComponent.maxHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_6058940427413991504)coherenceComponent;
+			return update.maxHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_6058940427413991504)coherenceComponent;
+			update.maxHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_6058940427413991504();
+		}
+	}
+
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_f39af7f3_c884_47a7_b5d5_1fcc25d59f05 : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_6058940427413991504";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.currentHealth);
+			set => CastedUnityComponent.currentHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_6058940427413991504)coherenceComponent;
+			return update.currentHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_6058940427413991504)coherenceComponent;
+			update.currentHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_6058940427413991504();
+		}
+	}
+
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_da7b161f_0a0d_4aed_bd2c_1f1a4ded271c : BoolBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_6058940427413991504";
+
+		public override uint FieldMask => 0b00000000000000000000000000000100;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.enabled);
+			set => CastedUnityComponent.enabled = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_6058940427413991504)coherenceComponent;
+			return update.enabled;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_6058940427413991504)coherenceComponent;
+			update.enabled = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_6058940427413991504();
 		}
 	}
 
@@ -4166,6 +4388,117 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_beed8eb5_eb5b_4886_b863_9600eba63bae : BoolBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_7728632679177017250";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.enabled);
+			set => CastedUnityComponent.enabled = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_7728632679177017250)coherenceComponent;
+			return update.enabled;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_7728632679177017250)coherenceComponent;
+			update.enabled = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_7728632679177017250();
+		}
+	}
+
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_dbb48a0f_71a1_4247_979b_620d2df8b13d : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_7728632679177017250";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.currentHealth);
+			set => CastedUnityComponent.currentHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_7728632679177017250)coherenceComponent;
+			return update.currentHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_7728632679177017250)coherenceComponent;
+			update.currentHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_7728632679177017250();
+		}
+	}
+
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_f6e266b9_e455_4b4a_90e2_f1a9786d4522 : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_7728632679177017250";
+
+		public override uint FieldMask => 0b00000000000000000000000000000100;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.maxHealth);
+			set => CastedUnityComponent.maxHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_7728632679177017250)coherenceComponent;
+			return update.maxHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_7728632679177017250)coherenceComponent;
+			update.maxHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_7728632679177017250();
+		}
+	}
+
 	public class Binding_dc358293f079f194ab5ec7d1d043818f_96fe9f1f_357a_404e_a900_37547c36e297 : DeepPositionBinding
 	{
 		private UnityEngine.Transform CastedUnityComponent;		
@@ -5276,6 +5609,80 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_2f6fe318_950c_4e2c_9171_ec2d4988f690 : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_7876943199613064705";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.currentHealth);
+			set => CastedUnityComponent.currentHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_7876943199613064705)coherenceComponent;
+			return update.currentHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_7876943199613064705)coherenceComponent;
+			update.currentHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_7876943199613064705();
+		}
+	}
+
+	public class Binding_dc358293f079f194ab5ec7d1d043818f_e8b5ee83_2cd9_4065_9ac7_bee1d3d2bf0b : BoolBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "EnemyGroup_id10_Health_7876943199613064705";
+
+		public override uint FieldMask => 0b00000000000000000000000000000100;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.enabled);
+			set => CastedUnityComponent.enabled = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_7876943199613064705)coherenceComponent;
+			return update.enabled;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (EnemyGroup_id10_Health_7876943199613064705)coherenceComponent;
+			update.enabled = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new EnemyGroup_id10_Health_7876943199613064705();
+		}
+	}
+
 	public class Binding_dc358293f079f194ab5ec7d1d043818f_a51fffb9_69c1_499d_9f43_eed7da8e60d5 : DeepPositionBinding
 	{
 		private UnityEngine.Transform CastedUnityComponent;		
@@ -5701,6 +6108,36 @@ namespace Coherence.Generated
 			{
 				logger.Error("Couldn't find binding (UnityEngine.AI.NavMeshAgent).enabled");
 			}
+			if (coherenceSync.TryGetBindingByGuid("4329b449-8326-4a98-8f97-851284f6125e", "maxHealth", out Binding InternalEnemyGroup_id10_Health_859708723760784344_EnemyGroup_id10_Health_859708723760784344_maxHealth))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_4329b449_8326_4a98_8f97_851284f6125e();
+				InternalEnemyGroup_id10_Health_859708723760784344_EnemyGroup_id10_Health_859708723760784344_maxHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_859708723760784344_EnemyGroup_id10_Health_859708723760784344_maxHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).maxHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("1bb949d8-992b-4c46-ad59-385c4819137e", "currentHealth", out Binding InternalEnemyGroup_id10_Health_859708723760784344_EnemyGroup_id10_Health_859708723760784344_currentHealth))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_1bb949d8_992b_4c46_ad59_385c4819137e();
+				InternalEnemyGroup_id10_Health_859708723760784344_EnemyGroup_id10_Health_859708723760784344_currentHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_859708723760784344_EnemyGroup_id10_Health_859708723760784344_currentHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).currentHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("a0ab5a00-355c-4ba7-9624-e83189ca5d9f", "enabled", out Binding InternalEnemyGroup_id10_Health_859708723760784344_EnemyGroup_id10_Health_859708723760784344_enabled))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_a0ab5a00_355c_4ba7_9624_e83189ca5d9f();
+				InternalEnemyGroup_id10_Health_859708723760784344_EnemyGroup_id10_Health_859708723760784344_enabled.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_859708723760784344_EnemyGroup_id10_Health_859708723760784344_enabled)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).enabled");
+			}
 			if (coherenceSync.TryGetBindingByGuid("fe77fe64-2802-4e82-99cb-ee1172e32a42", "position", out Binding InternalEnemyGroup_id10_UnityEngine__char_46_Transform_1746768942814505432_EnemyGroup_id10_UnityEngine__char_46_Transform_1746768942814505432_position))
 			{
 				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_fe77fe64_2802_4e82_99cb_ee1172e32a42();
@@ -5990,6 +6427,36 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.AI.NavMeshAgent).enabled");
+			}
+			if (coherenceSync.TryGetBindingByGuid("1a0cad45-804c-4e24-8dc7-d5b0a1e92025", "maxHealth", out Binding InternalEnemyGroup_id10_Health_6058940427413991504_EnemyGroup_id10_Health_6058940427413991504_maxHealth))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_1a0cad45_804c_4e24_8dc7_d5b0a1e92025();
+				InternalEnemyGroup_id10_Health_6058940427413991504_EnemyGroup_id10_Health_6058940427413991504_maxHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_6058940427413991504_EnemyGroup_id10_Health_6058940427413991504_maxHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).maxHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("f39af7f3-c884-47a7-b5d5-1fcc25d59f05", "currentHealth", out Binding InternalEnemyGroup_id10_Health_6058940427413991504_EnemyGroup_id10_Health_6058940427413991504_currentHealth))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_f39af7f3_c884_47a7_b5d5_1fcc25d59f05();
+				InternalEnemyGroup_id10_Health_6058940427413991504_EnemyGroup_id10_Health_6058940427413991504_currentHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_6058940427413991504_EnemyGroup_id10_Health_6058940427413991504_currentHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).currentHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("da7b161f-0a0d-4aed-bd2c-1f1a4ded271c", "enabled", out Binding InternalEnemyGroup_id10_Health_6058940427413991504_EnemyGroup_id10_Health_6058940427413991504_enabled))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_da7b161f_0a0d_4aed_bd2c_1f1a4ded271c();
+				InternalEnemyGroup_id10_Health_6058940427413991504_EnemyGroup_id10_Health_6058940427413991504_enabled.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_6058940427413991504_EnemyGroup_id10_Health_6058940427413991504_enabled)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).enabled");
 			}
 			if (coherenceSync.TryGetBindingByGuid("ff02904f-149f-402f-875e-8f44ffbd3adb", "position", out Binding InternalEnemyGroup_id10_UnityEngine__char_46_Transform_5171864830301698640_EnemyGroup_id10_UnityEngine__char_46_Transform_5171864830301698640_position))
 			{
@@ -6571,6 +7038,36 @@ namespace Coherence.Generated
 			{
 				logger.Error("Couldn't find binding (UnityEngine.AI.NavMeshAgent).enabled");
 			}
+			if (coherenceSync.TryGetBindingByGuid("beed8eb5-eb5b-4886-b863-9600eba63bae", "enabled", out Binding InternalEnemyGroup_id10_Health_7728632679177017250_EnemyGroup_id10_Health_7728632679177017250_enabled))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_beed8eb5_eb5b_4886_b863_9600eba63bae();
+				InternalEnemyGroup_id10_Health_7728632679177017250_EnemyGroup_id10_Health_7728632679177017250_enabled.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_7728632679177017250_EnemyGroup_id10_Health_7728632679177017250_enabled)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).enabled");
+			}
+			if (coherenceSync.TryGetBindingByGuid("dbb48a0f-71a1-4247-979b-620d2df8b13d", "currentHealth", out Binding InternalEnemyGroup_id10_Health_7728632679177017250_EnemyGroup_id10_Health_7728632679177017250_currentHealth))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_dbb48a0f_71a1_4247_979b_620d2df8b13d();
+				InternalEnemyGroup_id10_Health_7728632679177017250_EnemyGroup_id10_Health_7728632679177017250_currentHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_7728632679177017250_EnemyGroup_id10_Health_7728632679177017250_currentHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).currentHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("f6e266b9-e455-4b4a-90e2-f1a9786d4522", "maxHealth", out Binding InternalEnemyGroup_id10_Health_7728632679177017250_EnemyGroup_id10_Health_7728632679177017250_maxHealth))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_f6e266b9_e455_4b4a_90e2_f1a9786d4522();
+				InternalEnemyGroup_id10_Health_7728632679177017250_EnemyGroup_id10_Health_7728632679177017250_maxHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_7728632679177017250_EnemyGroup_id10_Health_7728632679177017250_maxHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).maxHealth");
+			}
 			if (coherenceSync.TryGetBindingByGuid("96fe9f1f-357a-404e-a900-37547c36e297", "position", out Binding InternalEnemyGroup_id10_UnityEngine__char_46_Transform_8688032914319220130_EnemyGroup_id10_UnityEngine__char_46_Transform_8688032914319220130_position))
 			{
 				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_96fe9f1f_357a_404e_a900_37547c36e297();
@@ -6870,6 +7367,26 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (Health).maxHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("2f6fe318-950c-4e2c-9171-ec2d4988f690", "currentHealth", out Binding InternalEnemyGroup_id10_Health_7876943199613064705_EnemyGroup_id10_Health_7876943199613064705_currentHealth))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_2f6fe318_950c_4e2c_9171_ec2d4988f690();
+				InternalEnemyGroup_id10_Health_7876943199613064705_EnemyGroup_id10_Health_7876943199613064705_currentHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_7876943199613064705_EnemyGroup_id10_Health_7876943199613064705_currentHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).currentHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("e8b5ee83-2cd9-4065-9ac7-bee1d3d2bf0b", "enabled", out Binding InternalEnemyGroup_id10_Health_7876943199613064705_EnemyGroup_id10_Health_7876943199613064705_enabled))
+			{
+				var clone = new Binding_dc358293f079f194ab5ec7d1d043818f_e8b5ee83_2cd9_4065_9ac7_bee1d3d2bf0b();
+				InternalEnemyGroup_id10_Health_7876943199613064705_EnemyGroup_id10_Health_7876943199613064705_enabled.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalEnemyGroup_id10_Health_7876943199613064705_EnemyGroup_id10_Health_7876943199613064705_enabled)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).enabled");
 			}
 			if (coherenceSync.TryGetBindingByGuid("a51fffb9-69c1-499d-9f43-eed7da8e60d5", "position", out Binding InternalEnemyGroup_id10_UnityEngine__char_46_Transform_9116147138792381441_EnemyGroup_id10_UnityEngine__char_46_Transform_9116147138792381441_position))
 			{

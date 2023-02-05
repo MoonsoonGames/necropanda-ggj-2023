@@ -18,10 +18,11 @@ namespace Coherence.Generated
 	public struct Lily__char_32_Pad_id5_Health_7105588657738653232 : ICoherenceComponentData
 	{
 		public int maxHealth;
+		public int currentHealth;
 
 		public override string ToString()
 		{
-			return $"Lily__char_32_Pad_id5_Health_7105588657738653232(maxHealth: {maxHealth})";
+			return $"Lily__char_32_Pad_id5_Health_7105588657738653232(maxHealth: {maxHealth}, currentHealth: {currentHealth})";
 		}
 
 		public uint GetComponentType() => Definition.InternalLily__char_32_Pad_id5_Health_7105588657738653232;
@@ -34,6 +35,8 @@ namespace Coherence.Generated
 	
 		private static readonly int _maxHealth_Min = -2147483648;
 		private static readonly int _maxHealth_Max = 2147483647;
+		private static readonly int _currentHealth_Min = -2147483648;
+		private static readonly int _currentHealth_Max = 2147483647;
 
 		public void SetSimulationFrame(AbsoluteSimulationFrame frame)
 		{
@@ -51,6 +54,12 @@ namespace Coherence.Generated
 				maxHealth = other.maxHealth;
 			}
 			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				currentHealth = other.currentHealth;
+			}
+			mask >>= 1;
 			return this;
 		}
 
@@ -61,6 +70,13 @@ namespace Coherence.Generated
 				Coherence.Utils.Bounds.Check(data.maxHealth, _maxHealth_Min, _maxHealth_Max, "Lily__char_32_Pad_id5_Health_7105588657738653232.maxHealth");
 				data.maxHealth = Coherence.Utils.Bounds.Clamp(data.maxHealth, _maxHealth_Min, _maxHealth_Max);
 				bitStream.WriteIntegerRange(data.maxHealth, 32, -2147483648);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				Coherence.Utils.Bounds.Check(data.currentHealth, _currentHealth_Min, _currentHealth_Max, "Lily__char_32_Pad_id5_Health_7105588657738653232.currentHealth");
+				data.currentHealth = Coherence.Utils.Bounds.Clamp(data.currentHealth, _currentHealth_Min, _currentHealth_Max);
+				bitStream.WriteIntegerRange(data.currentHealth, 32, -2147483648);
 			}
 			mask >>= 1;
 		}
@@ -75,6 +91,11 @@ namespace Coherence.Generated
 				val.maxHealth = bitStream.ReadIntegerRange(32, -2147483648);
 				mask |= 0b00000000000000000000000000000001;
 			}
+			if (bitStream.ReadMask())
+			{
+				val.currentHealth = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b00000000000000000000000000000010;
+			}
 			return (val, mask, null);
 		}
 		public static (Lily__char_32_Pad_id5_Health_7105588657738653232, uint, uint?) DeserializeArchetypeLily__char_32_Pad_e6b57ddcc936ef24db26545e3576fe23_Lily__char_32_Pad_id5_Health_7105588657738653232_LOD0(InProtocolBitStream bitStream)
@@ -85,6 +106,11 @@ namespace Coherence.Generated
 			{
 				val.maxHealth = bitStream.ReadIntegerRange(32, -2147483648);
 				mask |= 0b00000000000000000000000000000001;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.currentHealth = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b00000000000000000000000000000010;
 			}
 
 			return (val, mask, 0);

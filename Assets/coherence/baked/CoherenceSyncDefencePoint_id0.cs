@@ -59,6 +59,43 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_e2ce5010b5b9e6e4dbcc44fba32a7f6e_14dfe04d_5407_45cd_bc22_6c79632232bd : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "DefencePoint_id0_Health_2952278128716974392";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.currentHealth);
+			set => CastedUnityComponent.currentHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (DefencePoint_id0_Health_2952278128716974392)coherenceComponent;
+			return update.currentHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (DefencePoint_id0_Health_2952278128716974392)coherenceComponent;
+			update.currentHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new DefencePoint_id0_Health_2952278128716974392();
+		}
+	}
+
 
 	[Preserve]
 	[AddComponentMenu("coherence/Baked/Baked 'DefencePoint' (auto assigned)")]
@@ -88,6 +125,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (Health).maxHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("14dfe04d-5407-45cd-bc22-6c79632232bd", "currentHealth", out Binding InternalDefencePoint_id0_Health_2952278128716974392_DefencePoint_id0_Health_2952278128716974392_currentHealth))
+			{
+				var clone = new Binding_e2ce5010b5b9e6e4dbcc44fba32a7f6e_14dfe04d_5407_45cd_bc22_6c79632232bd();
+				InternalDefencePoint_id0_Health_2952278128716974392_DefencePoint_id0_Health_2952278128716974392_currentHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalDefencePoint_id0_Health_2952278128716974392_DefencePoint_id0_Health_2952278128716974392_currentHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).currentHealth");
 			}
 		}
 

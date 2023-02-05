@@ -133,6 +133,43 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_cd0989dbe6b806a499067cd427b33d57_7268b252_040f_4789_9ec1_44986875b2eb : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.currentHealth);
+			set => CastedUnityComponent.currentHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369)coherenceComponent;
+			return update.currentHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369)coherenceComponent;
+			update.currentHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369();
+		}
+	}
+
 	public class Binding_cd0989dbe6b806a499067cd427b33d57_123ce12f_0726_46a1_92b0_82b10146c912 : DeepPositionBinding
 	{
 		private UnityEngine.Transform CastedUnityComponent;		
@@ -207,6 +244,80 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_cd0989dbe6b806a499067cd427b33d57_d43fda27_6c8a_482e_a5d6_6ebae1a6bb83 : DeepRotationBinding
+	{
+		private UnityEngine.Transform CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.Transform)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718";
+
+		public override uint FieldMask => 0b00000000000000000000000000000100;
+
+		public override Quaternion Value
+		{
+			get => (Quaternion)(UnityEngine.Quaternion)(CastedUnityComponent.localRotation);
+			set => CastedUnityComponent.localRotation = (UnityEngine.Quaternion)(value);
+		}
+
+		protected override Quaternion ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718)coherenceComponent;
+			return update.rotation;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718)coherenceComponent;
+			update.rotation = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718();
+		}
+	}
+
+	public class Binding_cd0989dbe6b806a499067cd427b33d57_c9e8a53e_9ba6_4a9e_9f31_b08f6537066e : Vector2Binding
+	{
+		private UnityEngine.SpriteRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.SpriteRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_SpriteRenderer_7956612112273618293";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override Vector2 Value
+		{
+			get => (Vector2)(UnityEngine.Vector2)(CastedUnityComponent.size);
+			set => CastedUnityComponent.size = (UnityEngine.Vector2)(value);
+		}
+
+		protected override Vector2 ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_SpriteRenderer_7956612112273618293)coherenceComponent;
+			return update.size;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_SpriteRenderer_7956612112273618293)coherenceComponent;
+			update.size = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_SpriteRenderer_7956612112273618293();
+		}
+	}
+
 
 	[Preserve]
 	[AddComponentMenu("coherence/Baked/Baked 'Venus Fly Trap' (auto assigned)")]
@@ -257,6 +368,16 @@ namespace Coherence.Generated
 			{
 				logger.Error("Couldn't find binding (Health).maxHealth");
 			}
+			if (coherenceSync.TryGetBindingByGuid("7268b252-040f-4789-9ec1-44986875b2eb", "currentHealth", out Binding InternalVenus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369_Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369_currentHealth))
+			{
+				var clone = new Binding_cd0989dbe6b806a499067cd427b33d57_7268b252_040f_4789_9ec1_44986875b2eb();
+				InternalVenus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369_Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369_currentHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalVenus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369_Venus__char_32_Fly__char_32_Trap_id7_Health_1802279656568455369_currentHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).currentHealth");
+			}
 			if (coherenceSync.TryGetBindingByGuid("123ce12f-0726-46a1-92b0-82b10146c912", "position", out Binding InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_position))
 			{
 				var clone = new Binding_cd0989dbe6b806a499067cd427b33d57_123ce12f_0726_46a1_92b0_82b10146c912();
@@ -276,6 +397,26 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Transform).localScale");
+			}
+			if (coherenceSync.TryGetBindingByGuid("d43fda27-6c8a-482e-a5d6-6ebae1a6bb83", "rotation", out Binding InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_rotation))
+			{
+				var clone = new Binding_cd0989dbe6b806a499067cd427b33d57_d43fda27_6c8a_482e_a5d6_6ebae1a6bb83();
+				InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_rotation.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_Transform_8238115587357776718_rotation)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.Transform).rotation");
+			}
+			if (coherenceSync.TryGetBindingByGuid("c9e8a53e-9ba6-4a9e-9f31-b08f6537066e", "size", out Binding InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_SpriteRenderer_7956612112273618293_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_SpriteRenderer_7956612112273618293_size))
+			{
+				var clone = new Binding_cd0989dbe6b806a499067cd427b33d57_c9e8a53e_9ba6_4a9e_9f31_b08f6537066e();
+				InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_SpriteRenderer_7956612112273618293_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_SpriteRenderer_7956612112273618293_size.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalVenus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_SpriteRenderer_7956612112273618293_Venus__char_32_Fly__char_32_Trap_id7_UnityEngine__char_46_SpriteRenderer_7956612112273618293_size)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.SpriteRenderer).size");
 			}
 		}
 

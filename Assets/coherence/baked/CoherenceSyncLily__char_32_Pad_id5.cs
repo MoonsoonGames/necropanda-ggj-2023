@@ -133,6 +133,43 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_e6b57ddcc936ef24db26545e3576fe23_eee680c3_21f9_4ab3_9902_939aee12fdf3 : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Lily__char_32_Pad_id5_Health_7105588657738653232";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.currentHealth);
+			set => CastedUnityComponent.currentHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Lily__char_32_Pad_id5_Health_7105588657738653232)coherenceComponent;
+			return update.currentHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Lily__char_32_Pad_id5_Health_7105588657738653232)coherenceComponent;
+			update.currentHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Lily__char_32_Pad_id5_Health_7105588657738653232();
+		}
+	}
+
 	public class Binding_e6b57ddcc936ef24db26545e3576fe23_775bcbea_1240_4f4c_b030_968c55400577 : DeepPositionBinding
 	{
 		private UnityEngine.Transform CastedUnityComponent;		
@@ -330,6 +367,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (Health).maxHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("eee680c3-21f9-4ab3-9902-939aee12fdf3", "currentHealth", out Binding InternalLily__char_32_Pad_id5_Health_7105588657738653232_Lily__char_32_Pad_id5_Health_7105588657738653232_currentHealth))
+			{
+				var clone = new Binding_e6b57ddcc936ef24db26545e3576fe23_eee680c3_21f9_4ab3_9902_939aee12fdf3();
+				InternalLily__char_32_Pad_id5_Health_7105588657738653232_Lily__char_32_Pad_id5_Health_7105588657738653232_currentHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalLily__char_32_Pad_id5_Health_7105588657738653232_Lily__char_32_Pad_id5_Health_7105588657738653232_currentHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).currentHealth");
 			}
 			if (coherenceSync.TryGetBindingByGuid("775bcbea-1240-4f4c-b030-968c55400577", "position", out Binding InternalLily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821_Lily__char_32_Pad_id5_UnityEngine__char_46_Transform_6732670781276190821_position))
 			{

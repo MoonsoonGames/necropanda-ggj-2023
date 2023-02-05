@@ -133,6 +133,43 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_200a876feaaaf244589706ac69e6dc16_7c0f4952_47f8_4d97_92fc_6d8960321366 : IntBinding
+	{
+		private Health CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (Health)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Spores_id8_Health_1977754536731014931";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.currentHealth);
+			set => CastedUnityComponent.currentHealth = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Spores_id8_Health_1977754536731014931)coherenceComponent;
+			return update.currentHealth;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Spores_id8_Health_1977754536731014931)coherenceComponent;
+			update.currentHealth = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Spores_id8_Health_1977754536731014931();
+		}
+	}
+
 	public class Binding_200a876feaaaf244589706ac69e6dc16_90c5c971_b8dc_4135_830e_96fca9dc7b58 : DeepPositionBinding
 	{
 		private UnityEngine.Transform CastedUnityComponent;		
@@ -337,6 +374,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (Health).maxHealth");
+			}
+			if (coherenceSync.TryGetBindingByGuid("7c0f4952-47f8-4d97-92fc-6d8960321366", "currentHealth", out Binding InternalSpores_id8_Health_1977754536731014931_Spores_id8_Health_1977754536731014931_currentHealth))
+			{
+				var clone = new Binding_200a876feaaaf244589706ac69e6dc16_7c0f4952_47f8_4d97_92fc_6d8960321366();
+				InternalSpores_id8_Health_1977754536731014931_Spores_id8_Health_1977754536731014931_currentHealth.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalSpores_id8_Health_1977754536731014931_Spores_id8_Health_1977754536731014931_currentHealth)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (Health).currentHealth");
 			}
 			if (coherenceSync.TryGetBindingByGuid("90c5c971-b8dc-4135-830e-96fca9dc7b58", "position", out Binding InternalSpores_id8_UnityEngine__char_46_Transform_5188060417753529539_Spores_id8_UnityEngine__char_46_Transform_5188060417753529539_position))
 			{
