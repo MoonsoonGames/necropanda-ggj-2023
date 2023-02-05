@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AISpawner : MonoBehaviour
 {
@@ -10,7 +11,11 @@ public class AISpawner : MonoBehaviour
     {
         instance = this;
 
-        //Invoke("SpawnNextWave", 15);
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "GameScene")
+        {
+            Invoke("SpawnNextWave", 15);
+        }
     }
 
     public GameObject enemyPrefab;
