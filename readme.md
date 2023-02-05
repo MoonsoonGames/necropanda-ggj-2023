@@ -1,18 +1,37 @@
-### Blank Unity Project ### 
+### Rooted Resistance ### 
 
-This repository has been pre-configured with a .gitignore and .gitattributes file specific to Unity projects using git-lfs. 
+What will you do to defend your roots?
 
-This project was created for Unity [2021.3.4f1](https://unity3d.com/get-unity/download/archive)
+Fight off the oncoming lumberjacks employed to cut down the natural beauty of the island to make room for the evil businessman's new tropical hotel. Run the lumberjacks off the island by growing more plants to fight back.
 
-The project has been created with a barebones folder structure.  The settings have been optimized for best 3D quality without adding any additional packages to the project.
-For 2D projects, go to Edit -> Project Settings -> Editor and set the "Default Behaviour Mode" to 2D.  Do this at the start so that imported assets are optimized automatically.
+Play as a coconut tree, buy seeds and grow different types of plants to help in your resistance. Let your roots grow and become the most unstoppable force on the island
 
-To use this repo select it from the remplate list when making a new repo.
+Features:
 
-Note:  Do not leave empty folders in your Unity project.  Empty folders do not get added to version control, but the meta files they create do.  This can lead to issues with keeping your project up to date.
+Grow plants to stop lumberjacks from cutting down your forest.
+Play with other players in multiplayer.
+A player can join the game from the unity editor and play as a dungeon master. In this role, they have the tools to help the other players or increase challenge.
+How to play 
 
-Please make sure you place all of your Terrain in a folder called "Terrain" or "Terrains". Failing to do so will result in corupted projects.
+LMB to pick a tile to grow plants on
 
-For full details on this project's settings, please read the Changelog.md
- 
-Do you have any suggestions for improvements? Please submit a pull request!
+Find the plant you wish to grow in the bottom right hand corner and click grow
+
+WSAD to move 
+
+
+Credits:
+Artwork: 
+
+Background and sprites: Sean Watson
+Promotional Materials: Adam Williams
+Design: 
+
+Adam Williams
+Programming: 
+
+Grid System: Andrew Scott
+Plant System: Andrew Scott
+Multiplayer Coherence integration: Matthew Roberts
+AI: Matthew Roberts
+Shop UI Code and Integration: Jack Drage
